@@ -1,0 +1,12 @@
+.menuLink {
+  color: red;
+  @apply text-base leading-6 font-medium text-gray-500;
+
+  &:hover {
+    @apply text-gray-900;
+  }
+
+  &:focus {
+    @apply text-gray-900 transition ease-in-out duration-150;
+  }
+}

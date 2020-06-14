@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "next": "^9.4.4",
+    "postcss-nested": "^4.2.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "tailwindcss": "^1.4.6"

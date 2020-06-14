@@ -1,3 +1,5 @@
+import s from "./Header.module.css";
+
 export default function Header() {
   return (
     <div className="container mx-auto relative bg-white">
@@ -33,50 +35,23 @@ export default function Header() {
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeWidth="2"
                   d="M4 6h16M4 12h16M4 18h16"
                 />
               </svg>
             </button>
           </div>
           <nav className="hidden md:flex space-x-10">
-            <div className="relative">
-              <button
-                type="button"
-                className="text-gray-500 group inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
-              >
-                <span>New Arrivals</span>
-                <svg
-                  className="text-gray-400 h-5 w-5 group-hover:text-gray-500 group-focus:text-gray-500 transition ease-in-out duration-150"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-              </button>
-            </div>
-
-            <a
-              href="#"
-              className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
-            >
+            <a href="#" className={s.menuLink}>
+              New Arrivals
+            </a>
+            <a href="#" className={s.menuLink}>
               Jewlery
             </a>
-            <a
-              href="#"
-              className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
-            >
+            <a href="#" className={s.menuLink}>
               Watches
             </a>
-
-            <a
-              href="#"
-              className="text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150"
-            >
+            <a href="#" className={s.menuLink}>
               Sale
             </a>
           </nav>
