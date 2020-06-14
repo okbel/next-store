@@ -1,13 +1,3 @@
 {
-  "plugins": [
-    [
-      "tailwindcss",
-      {
-        "purge": {
-          "mode": "all",
-          "content": ["./pages/**/*.js", "./components/**/*.js"]
-        }
-      }
-    ]
-  ]
+  "plugins": ["tailwindcss"]
 }
