@@ -1,6 +1,6 @@
 export default function Banner() {
   return (
-    <div className="relative bg-gray-800">
+    <div className="relative bg-black">
       <div className="max-w-screen-xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
         <div className="pr-16 sm:text-center sm:px-16">
           <p className="font-medium text-white">

@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className="container mx-auto relative bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+        <div className="flex justify-between items-center border-b-2 border-gray-200 py-6 md:justify-start md:space-x-10">
           <div className="lg:w-0 lg:flex-1">
             <a href="#" className="flex">
               <svg
@@ -46,6 +46,12 @@ export default function Header() {
               New Arrivals
             </a>
             <a href="#" className={s.menuLink}>
+              Electronics
+            </a>
+            <a href="#" className={s.menuLink}>
+              Home & Furniture
+            </a>
+            <a href="#" className={s.menuLink}>
               Jewlery
             </a>
             <a href="#" className={s.menuLink}>
@@ -58,14 +64,14 @@ export default function Header() {
           <div className="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
             <a
               href="#"
-              className="whitespace-no-wrap text-base leading-6 font-medium text-gray-500 hover:text-gray-900 focus:outline-none focus:text-gray-900"
+              className="whitespace-no-wrap text-base leading-6 font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900"
             >
               Sign in
             </a>
-            <span className="inline-flex rounded-md shadow-sm">
+            <span className="inline-flex  shadow-sm">
               <a
                 href="#"
-                className="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150"
+                className="whitespace-no-wrap rounded-sm inline-flex items-center justify-center px-4 py-2 border border-transparent text-white leading-6 font-medium bg-gray-900 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150"
               >
                 Sign up
               </a>
@@ -73,6 +79,23 @@ export default function Header() {
           </div>
         </div>
       </div>
+      {/* <div class="relative bg-white overflow-hidden py-4 flex px-6">
+        <div class="relative flex-1 shadow-sm mr-6 rounded-md relative z-10 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 h-6 overflow-hidden">
+          <img
+            className="transform -translate-y-64 w-full object-cover z-0"
+            src="https://images.unsplash.com/photo-1575330933415-cea1e7ce53eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
+          />
+          <div className="py-6 z-10">
+            <h2>20% OFF in Beauty and Care</h2>
+          </div>
+        </div>
+        <div class="flex-1 rounded-md relative z-10 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 h-6 overflow-hidden">
+          <img
+            className="w-full object-cover"
+            src="https://images.unsplash.com/photo-1568386453619-84c3ff4b43c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
+          />
+        </div>
+      </div> */}
     </div>
   );
 }

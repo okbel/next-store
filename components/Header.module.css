@@ -1,6 +1,6 @@
 .menuLink {
   color: red;
-  @apply text-base leading-6 font-medium text-gray-500;
+  @apply text-base leading-6 font-medium text-gray-700;
 
   &:hover {
     @apply text-gray-900;

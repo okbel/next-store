@@ -114,22 +114,6 @@ export default function Footer() {
                       Jobs
                     </a>
                   </li>
-                  <li className="mt-4">
-                    <a
-                      href="#"
-                      className="text-base leading-6 text-gray-300 hover:text-white"
-                    >
-                      Press
-                    </a>
-                  </li>
-                  <li className="mt-4">
-                    <a
-                      href="#"
-                      className="text-base leading-6 text-gray-300 hover:text-white"
-                    >
-                      Partners
-                    </a>
-                  </li>
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
@@ -239,7 +223,7 @@ export default function Footer() {
             </a>
           </div>
           <p className="mt-8 text-base leading-6 text-gray-400 md:mt-0 md:order-1">
-            &copy; 2020 Workflow, Inc. All rights reserved.
+            &copy; 2020 MyStore, Inc. All rights reserved.
           </p>
         </div>
       </div>

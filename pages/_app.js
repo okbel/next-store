@@ -5,7 +5,7 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>My Store</title>
+        <title>MyStore</title>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
       <Component {...pageProps} />
