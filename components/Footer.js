@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="bg-black">
+    <div className="bg-black mt-12">
       <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="grid grid-cols-2 gap-8 xl:col-span-2">
@@ -62,23 +62,7 @@ export default function Footer() {
                       href="#"
                       className="text-base leading-6 text-gray-300 hover:text-white"
                     >
-                      Documentation
-                    </a>
-                  </li>
-                  <li className="mt-4">
-                    <a
-                      href="#"
-                      className="text-base leading-6 text-gray-300 hover:text-white"
-                    >
                       Guides
-                    </a>
-                  </li>
-                  <li className="mt-4">
-                    <a
-                      href="#"
-                      className="text-base leading-6 text-gray-300 hover:text-white"
-                    >
-                      API Status
                     </a>
                   </li>
                 </ul>

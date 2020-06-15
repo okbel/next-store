@@ -10,3 +10,29 @@
     @apply text-gray-900 transition ease-in-out duration-150;
   }
 }
+
+.cta {
+  @apply text-center uppercase text-white p-6 bg-black z-10 p-6 font-bold inline-block cursor-pointer;
+}
+
+.hero {
+  @apply p-12 relative flex flex-col justify-center items-center overflow-hidden  mt-6 rounded-md relative;
+  min-height: 400px;
+
+  h1 {
+    @apply p-6 bg-black text-white font-medium z-10 text-4xl font-bold;
+
+    @media md {
+      @apply text-6xl;
+    }
+  }
+
+  .cta {
+    @apply mt-6;
+  }
+}
+
+.heroImage {
+  @apply w-full object-cover absolute z-0;
+  height: 400px;
+}

@@ -3,7 +3,7 @@ import s from "./Header.module.css";
 export default function Header() {
   return (
     <div className="container mx-auto relative bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto ">
         <div className="flex justify-between items-center border-b-2 border-gray-200 py-6 md:justify-start md:space-x-10">
           <div className="lg:w-0 lg:flex-1">
             <a href="#" className="flex">
@@ -19,6 +19,7 @@ export default function Header() {
                   d="M57.5 0L115 100H0L57.5 0z"
                 />
               </svg>
+              <span>MyStore</span>
             </a>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
@@ -79,23 +80,30 @@ export default function Header() {
           </div>
         </div>
       </div>
-      {/* <div class="relative bg-white overflow-hidden py-4 flex px-6">
-        <div class="relative flex-1 shadow-sm mr-6 rounded-md relative z-10 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 h-6 overflow-hidden">
+      <div class={s.hero}>
+        <h1>25% OFF! in Iconic Handbags </h1>
+        <a className={s.cta}>Shop LV, Hermès and more &rarr; </a>
+        <img
+          className={s.heroImage}
+          src="https://images.unsplash.com/photo-1524672353063-4f66ee1f385e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2098&q=80"
+        />
+      </div>
+      <div class="relative bg-white overflow-hidden flex mt-6 h-64 ">
+        <div class="relative flex-1 shadow-sm mr-6 rounded-md relative z-10 w-full h-full overflow-hidden flex justify-center items-center">
+          <a className={s.cta}>Shop Beauty &rarr;</a>
           <img
-            className="transform -translate-y-64 w-full object-cover z-0"
+            className="absolute transform -translate-y-64 w-full object-cover z-0"
             src="https://images.unsplash.com/photo-1575330933415-cea1e7ce53eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
           />
-          <div className="py-6 z-10">
-            <h2>20% OFF in Beauty and Care</h2>
-          </div>
         </div>
-        <div class="flex-1 rounded-md relative z-10 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32 h-6 overflow-hidden">
+        <div class="relative flex-1 shadow-sm rounded-md relative z-10 w-full h-full overflow-hidden flex justify-center items-center">
+          <a className={s.cta}>Shop Home &rarr;</a>
           <img
-            className="w-full object-cover"
+            className="absolute transform -translate-y-64 w-full object-cover z-0 w-full"
             src="https://images.unsplash.com/photo-1568386453619-84c3ff4b43c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
           />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }

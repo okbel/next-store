@@ -1,3 +1,5 @@
+import { MdFavorite, MdShoppingCart } from "react-icons/md";
+
 function Item({ img = "", title = "", desc = "", price = "0" }) {
   return (
     <div className="flex flex-col rounded-lg shadow-lg overflow-hidden relative">
@@ -9,7 +11,7 @@ function Item({ img = "", title = "", desc = "", price = "0" }) {
       </div>
       <div className="flex-1 bg-white p-6 flex flex-col justify-between">
         <div className="flex-1">
-          <p className="text-sm leading-5 font-medium text-indigo-600">
+          <p className="text-sm leading-5 font-medium text-indigo-600 uppercase tracking-wide text-sm text-indigo-600 font-bold">
             <a href="#" className="hover:underline">
               JEWLERY
             </a>
@@ -18,26 +20,28 @@ function Item({ img = "", title = "", desc = "", price = "0" }) {
             <h3 className="mt-2 text-xl leading-7 font-semibold text-gray-900">
               {title}
             </h3>
-            <p className="mt-3 text-base leading-6 text-gray-500">{desc}</p>
+            <p className="mt-2 text-base leading-6 text-gray-500">{desc}</p>
           </a>
         </div>
         <div class="mt-4 text-xl leading-none font-extrabold text-gray-900">
           <span>${price}</span>
         </div>
-        <div className="flex justify-center">
-          <div class="rounded-md shadow mt-6 flex-1">
+        <div className="flex justify-center mt-6">
+          <div class="rounded-md shadow flex-1">
             <a
               href="#"
-              class="flex items-center mr-4 justify-center px-5 py-3 border border-black text-base leading-6 font-medium rounded-md text-black bg-white hover:bg-black hover:text-white focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+              class="flex items-center mr-4 justify-center p-3 border border-black text-base leading-3 font-medium rounded-md text-black bg-white hover:bg-black hover:text-white focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
             >
+              <MdFavorite className="mr-2" />
               Obsess
             </a>
           </div>
-          <div class="rounded-md shadow mt-6 flex-1">
+          <div class="rounded-md shadow flex-1">
             <a
               href="#"
-              class="flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-gray-900 hover:bg-white hover:text-black focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+              class="flex items-center justify-center p-3 border border-transparent text-base leading-3 font-medium rounded-md text-white bg-black hover:bg-gray-800 hover:text-white focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
             >
+              <MdShoppingCart className="mr-2" />
               Add to Cart
             </a>
           </div>
