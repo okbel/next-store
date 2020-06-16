@@ -24,11 +24,11 @@
     "/_polyfills": [
       "static/runtime/polyfills.js"
     ],
-    "/index": [
+    "/home": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/next/dist/pages/_error": [
+    "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]

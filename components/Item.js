@@ -2,7 +2,7 @@ import { MdFavorite, MdShoppingCart } from "react-icons/md";
 
 function Item({ img = "", title = "", desc = "", price = "0" }) {
   return (
-    <div className="flex flex-col rounded-lg shadow-lg overflow-hidden relative">
+    <div className="flex flex-col  shadow-lg overflow-hidden relative">
       <div className="flex-shrink-0">
         <span class="absolute inline-block bg-black mt-3 mr-6 px-3 py-1 text-sm font-semibold text-white right-0">
           EDITORS PICK
@@ -27,19 +27,19 @@ function Item({ img = "", title = "", desc = "", price = "0" }) {
           <span>${price}</span>
         </div>
         <div className="flex justify-center mt-6">
-          <div class="rounded-md flex-1">
+          <div class=" flex-1">
             <a
               href="#"
-              class="flex items-center mr-4 justify-center p-3 border border-black text-base leading-3 font-medium rounded-md text-black bg-white hover:bg-black hover:text-white focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+              class="flex items-center mr-4 justify-center p-3 border border-black text-base leading-3 font-medium  text-black bg-white hover:bg-black hover:text-white focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
             >
               <MdFavorite className="mr-2" />
               Obsess
             </a>
           </div>
-          <div class="rounded-md flex-1">
+          <div class=" flex-1">
             <a
               href="#"
-              class="flex items-center justify-center p-3 border border-transparent text-base leading-3 font-medium rounded-md text-white bg-black hover:bg-gray-800 hover:text-white focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
+              class="flex items-center justify-center p-3 border border-transparent text-base leading-3 font-medium  text-white bg-black hover:bg-gray-800 hover:text-white focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
             >
               <MdShoppingCart className="mr-2" />
               <span class="hidden xl:inline">Add to Cart</span>

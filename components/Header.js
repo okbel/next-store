@@ -25,7 +25,7 @@ export default function Header() {
           <div className="-mr-2 -my-2 md:hidden">
             <button
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+              className="inline-flex items-center justify-center p-2  text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
             >
               <svg
                 className="h-6 w-6"
@@ -89,14 +89,14 @@ export default function Header() {
         />
       </div>
       <div class="relative bg-white overflow-hidden flex mt-6 h-64 ">
-        <div class="relative flex-1 shadow-sm mr-6 rounded-md relative z-10 w-full h-full overflow-hidden flex justify-center items-center">
+        <div class="relative flex-1 shadow-sm mr-6  relative z-10 w-full h-full overflow-hidden flex justify-center items-center">
           <a className={s.cta}>Shop Beauty &rarr;</a>
           <img
             className="absolute transform -translate-y-40 w-full object-cover z-0"
             src="https://images.unsplash.com/photo-1575330933415-cea1e7ce53eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
           />
         </div>
-        <div class="relative flex-1 shadow-sm rounded-md relative z-10 w-full h-full overflow-hidden flex justify-center items-center">
+        <div class="relative flex-1 shadow-sm  relative z-10 w-full h-full overflow-hidden flex justify-center items-center">
           <a className={s.cta}>Shop Home &rarr;</a>
           <img
             className="absolute transform  w-full object-cover z-0 w-full"

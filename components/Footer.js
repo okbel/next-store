@@ -146,11 +146,11 @@ export default function Footer() {
                 aria-label="Email address"
                 type="email"
                 required
-                className="appearance-none w-full px-5 py-3 border border-transparent text-base leading-6 rounded-md text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out"
+                className="appearance-none w-full px-5 py-3 border border-transparent text-base leading-6  text-gray-900 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 transition duration-150 ease-in-out"
                 placeholder="Enter your email"
               />
-              <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                <button className="w-full flex items-center justify-center px-5 py-3 border border-gray-100 text-base leading-6 font-medium rounded-md text-white bg-transpartent hover:bg-indigo-400 focus:outline-none focus:bg-indigo-400 transition duration-150 ease-in-out">
+              <div className="mt-3  shadow sm:mt-0 sm:ml-3 sm:flex-shrink-0">
+                <button className="w-full flex items-center justify-center px-5 py-3 border border-gray-100 text-base leading-6 font-medium  text-white bg-transpartent hover:bg-indigo-400 focus:outline-none focus:bg-indigo-400 transition duration-150 ease-in-out">
                   Subscribe
                 </button>
               </div>

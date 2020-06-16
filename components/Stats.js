@@ -1,6 +1,6 @@
 function StatsItem({ upper = "", text = "" }) {
   return (
-    <div className="bg-gray-100 overflow-hidden shadow rounded-lg flex align-middle cursor-pointer">
+    <div className="bg-gray-100 overflow-hidden shadow  flex align-middle cursor-pointer">
       <div className="px-4 py-5 sm:p-6 flex justify-center align-middle">
         <dl className="flex flex-col justify-center">
           <dt className="text-sm leading-5 font-medium text-gray-500 truncate">
