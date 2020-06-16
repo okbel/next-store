@@ -92,14 +92,14 @@ export default function Header() {
         <div class="relative flex-1 shadow-sm mr-6 rounded-md relative z-10 w-full h-full overflow-hidden flex justify-center items-center">
           <a className={s.cta}>Shop Beauty &rarr;</a>
           <img
-            className="absolute transform -translate-y-64 w-full object-cover z-0"
+            className="absolute transform -translate-y-40 w-full object-cover z-0"
             src="https://images.unsplash.com/photo-1575330933415-cea1e7ce53eb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80"
           />
         </div>
         <div class="relative flex-1 shadow-sm rounded-md relative z-10 w-full h-full overflow-hidden flex justify-center items-center">
           <a className={s.cta}>Shop Home &rarr;</a>
           <img
-            className="absolute transform -translate-y-64 w-full object-cover z-0 w-full"
+            className="absolute transform  w-full object-cover z-0 w-full"
             src="https://images.unsplash.com/photo-1568386453619-84c3ff4b43c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
           />
         </div>

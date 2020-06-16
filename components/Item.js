@@ -27,7 +27,7 @@ function Item({ img = "", title = "", desc = "", price = "0" }) {
           <span>${price}</span>
         </div>
         <div className="flex justify-center mt-6">
-          <div class="rounded-md shadow flex-1">
+          <div class="rounded-md flex-1">
             <a
               href="#"
               class="flex items-center mr-4 justify-center p-3 border border-black text-base leading-3 font-medium rounded-md text-black bg-white hover:bg-black hover:text-white focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
@@ -36,13 +36,14 @@ function Item({ img = "", title = "", desc = "", price = "0" }) {
               Obsess
             </a>
           </div>
-          <div class="rounded-md shadow flex-1">
+          <div class="rounded-md flex-1">
             <a
               href="#"
               class="flex items-center justify-center p-3 border border-transparent text-base leading-3 font-medium rounded-md text-white bg-black hover:bg-gray-800 hover:text-white focus:outline-none focus:shadow-outline transition duration-150 ease-in-out"
             >
               <MdShoppingCart className="mr-2" />
-              Add to Cart
+              <span class="hidden xl:inline">Add to Cart</span>
+              <span class="inline xl:hidden">Add</span>
             </a>
           </div>
         </div>

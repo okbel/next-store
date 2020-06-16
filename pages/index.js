@@ -7,7 +7,7 @@ export default function Index() {
   return (
     <>
       <Banner />
-      <main className="container mx-auto relative bg-white px-6">
+      <main className="container mx-auto relative bg-white px-6npm">
         <Header />
         <Feed />
         <Stats />

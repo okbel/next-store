@@ -20,10 +20,10 @@
   min-height: 400px;
 
   h1 {
-    @apply p-6 bg-black text-white font-medium z-10 text-4xl font-bold;
+    @apply p-6 bg-black text-white font-medium z-10 text-4xl font-bold text-center;
 
-    @media md {
-      @apply text-6xl;
+    @screen md {
+      @apply text-5xl;
     }
   }
 
