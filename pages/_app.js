@@ -1,5 +1,6 @@
 import Head from "next/head";
 import "../assets/tailwind.css";
+import { CloudinaryContext } from "cloudinary-react";
 
 export default function MyApp({ Component, pageProps }) {
   return (
@@ -8,7 +9,9 @@ export default function MyApp({ Component, pageProps }) {
         <title>MyStore</title>
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </Head>
-      <Component {...pageProps} />
+      <CloudinaryContext cloudName="vercel">
+        <Component {...pageProps} />
+      </CloudinaryContext>
     </>
   );
 }
