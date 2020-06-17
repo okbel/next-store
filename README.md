@@ -30,6 +30,7 @@ A proof of concept using a NextJS seed ready to be deployed with Vercel.
 
 [https://next-store-pi.vercel.app](https://next-store-pi.vercel.app)
 
-## Examples
+## Examples and Resources
 
 - NextJS with Prismic [https://github.com/vercel/next.js/tree/canary/examples/cms-prismic](https://github.com/vercel/next.js/tree/canary/examples/cms-prismic)
+- Data fetching with [SWR](https://swr.now.sh/)
