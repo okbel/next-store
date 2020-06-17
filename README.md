@@ -30,7 +30,25 @@ A proof of concept using a NextJS seed ready to be deployed with Vercel.
 
 [https://next-store-pi.vercel.app](https://next-store-pi.vercel.app)
 
+
+## Data Fetching
+
+Using SWR:
+
+```js
+import useSWR from 'swr'
+
+function Profile() {
+  const { data, error } = useSWR('/api/user', fetcher)
+
+  if (error) return <div>failed to load</div>
+  if (!data) return <div>loading...</div>
+  return <div>hello {data.name}!</div>
+}
+```
+
 ## Examples and Resources
 
 - NextJS with Prismic [https://github.com/vercel/next.js/tree/canary/examples/cms-prismic](https://github.com/vercel/next.js/tree/canary/examples/cms-prismic)
 - Data fetching with [SWR](https://swr.now.sh/)
+- [Nextjs Documentation](https://nextjs.org/docs/getting-started)
