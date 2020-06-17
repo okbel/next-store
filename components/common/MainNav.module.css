@@ -1,0 +1,9 @@
+.btn {
+  @apply flex justify-center items-center box-border block mb-8 text-center rounded-lg bg-geist-blue px-4 py-3 text-white shadow-md;
+  width: 300px;
+  height: 50px;
+
+  &:hover {
+    @apply bg-white text-geist-blue border border-geist-blue transition ease-in;
+  }
+}

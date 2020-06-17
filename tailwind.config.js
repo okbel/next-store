@@ -27,7 +27,12 @@ module.exports = {
         "sans-serif",
       ],
     },
-    extend: {},
+    extend: {
+      colors: {
+        "geist-blue": "#0070f3",
+        "regal-blue": "#243c5a",
+      },
+    },
   },
   variants: {},
   plugins: [],
