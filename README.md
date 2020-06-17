@@ -26,3 +26,7 @@ A proof of concept using a NextJS seed ready to be deployed with Vercel.
 ## Demo
 
 [https://next-store-pi.vercel.app](https://next-store-pi.vercel.app)
+
+## Examples
+
+- NextJS with Prismic [https://github.com/vercel/next.js/tree/canary/examples/cms-prismic](https://github.com/vercel/next.js/tree/canary/examples/cms-prismic)
