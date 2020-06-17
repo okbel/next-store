@@ -1,7 +1,7 @@
 export async function getServerSideProps() {
   await setTimeout(() => {
     // blocker function
-  }, 120000);
+  }, 1000);
 
   return {
     props: {

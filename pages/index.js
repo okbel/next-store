@@ -5,12 +5,12 @@ export default () => (
     <nav className="flex flex-col w-64">
       <Link href="/example-ssg">
         <a className="block mb-6 text-center rounded-lg bg-indigo-600 px-6 py-3 text-white">
-          Example SSG
+          Example Static Generation (SSG)
         </a>
       </Link>
       <Link href="/example-ssr">
         <a className="block mb-6 text-center rounded-lg bg-indigo-600 px-6 py-3 text-white">
-          Example SSG
+          Example Server Rendered (SSR)
         </a>
       </Link>
       <Link href="/common">
