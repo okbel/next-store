@@ -25,7 +25,9 @@ export default ({ width, height, publicId, ...rest }) => {
       className="relative block overflow-hidden ease-in"
       style={{
         position: "relative",
-        paddingBottom: `${(height / width) * 100}%`,
+        paddingBottom: `${
+          height > 0 && width > 0 ? (height / width) * 100 : 100
+        }%`,
         background: "#edf2f7",
       }}
     >
@@ -33,7 +35,9 @@ export default ({ width, height, publicId, ...rest }) => {
         // <Image loading="lazy" {...initialProps} />
         <img
           {...rest}
-          src={`${CD_API}${publicId}`}
+          src={`https://res.cloudinary.com/vercel/image/upload/${
+            height ? `h_${height},` : ""
+          }${width ? `w_${width},` : ""}/v1592403664/${publicId}`}
           width={width}
           height={height}
           loading="lazy"
