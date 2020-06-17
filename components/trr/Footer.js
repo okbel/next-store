@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <div>
       <div className="bg-black mt-12">
-        <div className="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-12">
+        <div className="max-w-screen-xl mx-auto py-12 px-12 sm:px-6 lg:py-16 lg:px-12">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="grid grid-cols-2 gap-8 xl:col-span-2">
               <div className="md:grid md:grid-cols-2 md:gap-8">
@@ -211,9 +211,9 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        <h3 className="text-center flex justify-center items-center text-xl font-bold">
+        <h5 className="text-center flex justify-center items-center text-xl font-bold">
           A SUSTAINABLE LUXURY COMPANY
-        </h3>
+        </h5>
         <p className="py-3 ">
           Honoring heritage brands and extending the lifecycle of luxury items.
         </p>

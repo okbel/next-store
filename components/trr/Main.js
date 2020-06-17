@@ -11,7 +11,7 @@ const Main = () => (
         height="150"
       />
     </div>
-    <div className="grid grid-cols-3 gap-10 mt-6">
+    <div className="grid md:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-10 mt-6">
       <div className="relative col-span-2 bg-gray-400 overflow-hidden">
         <Image
           alt="image"
@@ -26,8 +26,8 @@ const Main = () => (
           <a className="font-bold block">SHOP LV, HÈRMES, and MORE</a>
         </div>
       </div>
-      <div className=" flex flex-col">
-        <div className="relative flex-1 mb-10">
+      <div className="flex flex-col text-center">
+        <div className="relative flex-1 mb-10 text-center">
           <Image
             alt="image"
             publicId="product-shoes_wiujqw.jpg"
@@ -58,7 +58,7 @@ const Main = () => (
     </div>
     <div className="px-3 py-6 border-t border-gray-300 mt-12">
       <h2 className="text-center text-2xl">Top Designers</h2>
-      <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-6 p-3">
+      <div className="mt-5 grid gap-5 xl:grid-cols-6 sm:grid-cols-3 grid-cols-1 p-3">
         <div className="flex flex-col justify-center items-center">
           <div className="text-center bg-gray-400 inline-block h-40 w-40 rounded-full">
             <Image
@@ -141,7 +141,7 @@ const Main = () => (
     </div>
     <div className="px-3 py-6 border-t border-gray-300 mt-12">
       <h2 className="text-center text-2xl">Top Categories</h2>
-      <div className="mt-5 grid grid-cols-1 gap-8 sm:grid-cols-3 p-3">
+      <div className="mt-5 grid lg:grid-cols-3 gap-8 sm:grid-cols-1 p-3">
         <div className=" bg-gray-400">
           <Image
             alt="image"
