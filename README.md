@@ -21,4 +21,8 @@ A proof of concept using a NextJS seed ready to be deployed with Vercel.
 
 - Build `npm run build`
 
-- Deploy `vercel`
+- Deploy `vercel --prod`
+
+## Demo
+
+[https://next-store-pi.vercel.app](https://next-store-pi.vercel.app)
