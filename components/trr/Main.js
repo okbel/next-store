@@ -3,11 +3,21 @@ import Image from "../../components/Image";
 const Main = () => (
   <main className="container mx-auto relative py-6 px-10">
     <div className="bg-gray-400">
-      <Image publicId="top-banner.jpg" className="w-full" />
+      <Image
+        alt="image"
+        publicId="top-banner.jpg"
+        className="w-full"
+        width="1200"
+      />
     </div>
     <div className="grid grid-cols-3 gap-10 mt-6">
       <div className="relative col-span-2 bg-gray-400 overflow-hidden">
-        <Image publicId="product-bags_n9filt.jpg" className="w-full" />
+        <Image
+          alt="image"
+          publicId="product-bags_n9filt.jpg"
+          className="w-full"
+          width="786"
+        />
         <div className="absolute bg-white p-6 text-center bottom-0 w-full">
           <span className="text-2xl">Iconic Handbags</span>
           <a className="font-bold block">SHOP LV, HÈRMES, and MORE</a>
@@ -15,7 +25,7 @@ const Main = () => (
       </div>
       <div className=" flex flex-col">
         <div className="relative flex-1 mb-10">
-          <Image publicId="product-shoes_wiujqw.jpg" />
+          <Image alt="image" publicId="product-shoes_wiujqw.jpg" width="373" />
           <div className="absolute bg-gray-200 p-3 text-center bottom-0 w-full">
             <span className="text-2xl">Shoes with Sole</span>
             <a className="font-bold block underline uppercase text-sm">
@@ -24,7 +34,7 @@ const Main = () => (
           </div>
         </div>
         <div className="relative flex-1">
-          <Image publicId="product-women_mcaj3r.jpg" />
+          <Image alt="image" publicId="product-women_mcaj3r.jpg" width="373" />
           <div className="absolute bg-transparent text-center bottom-0 mb-10 w-full">
             <a className="font-bold block underline uppercase text-sm text-white">
               Shop now
@@ -38,7 +48,7 @@ const Main = () => (
       <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-6 p-3">
         <div className="flex flex-col justify-center items-center">
           <div className="text-center bg-gray-400 inline-block h-40 w-40 rounded-full">
-            <Image publicId="designer-gucci.jpg" />
+            <Image alt="image" publicId="designer-gucci.jpg" width="160" />
           </div>
           <span className="block mt-2 underline font-bold uppercase text-sm">
             GUCCI
@@ -46,7 +56,11 @@ const Main = () => (
         </div>
         <div className="flex flex-col justify-center items-center">
           <div className="text-center bg-gray-400 inline-block h-40 w-40 rounded-full">
-            <Image publicId="designer-burberry_xx9byy.jpg" />
+            <Image
+              alt="image"
+              publicId="designer-burberry_xx9byy.jpg"
+              width="160"
+            />
           </div>
           <span className="block mt-2 underline font-bold uppercase text-sm">
             Burberry
@@ -54,7 +68,11 @@ const Main = () => (
         </div>
         <div className="flex flex-col justify-center items-center">
           <div className="text-center bg-gray-400 inline-block h-40 w-40 rounded-full">
-            <Image publicId="designer-prada_jaxbna.jpg" />
+            <Image
+              alt="image"
+              publicId="designer-prada_jaxbna.jpg"
+              width="160"
+            />
           </div>
           <span className="block mt-2 underline font-bold uppercase text-sm">
             Prada
@@ -62,7 +80,11 @@ const Main = () => (
         </div>
         <div className="flex flex-col justify-center items-center">
           <div className="text-center bg-gray-400 inline-block h-40 w-40 rounded-full">
-            <Image publicId="designer-louboutin_gqnhf2.jpg" />
+            <Image
+              alt="image"
+              publicId="designer-louboutin_gqnhf2.jpg"
+              width="160"
+            />
           </div>
           <span className="block mt-2 underline font-bold uppercase text-sm">
             Louboutin
@@ -70,7 +92,11 @@ const Main = () => (
         </div>
         <div className="flex flex-col justify-center items-center">
           <div className="text-center bg-gray-400 inline-block h-40 w-40 rounded-full">
-            <Image publicId="designer-louis-vuitton_mmzvod.jpg" />
+            <Image
+              alt="image"
+              publicId="designer-louis-vuitton_mmzvod.jpg"
+              width="160"
+            />
           </div>
           <span className="block mt-2 underline font-bold uppercase text-sm">
             Louis Vuitton
@@ -78,7 +104,7 @@ const Main = () => (
         </div>
         <div className="flex flex-col justify-center items-center">
           <div className="text-center bg-gray-400 inline-block h-40 w-40 rounded-full">
-            <Image publicId="designer-gucci.jpg" />
+            <Image alt="image" publicId="designer-gucci.jpg" width="160" />
           </div>
           <span className="block mt-2 underline font-bold uppercase text-sm">
             HERMÈS
@@ -90,18 +116,22 @@ const Main = () => (
       <h2 className="text-center text-2xl">Top Categories</h2>
       <div className="mt-5 grid grid-cols-1 gap-8 sm:grid-cols-3 p-3">
         <div className=" bg-gray-400">
-          <Image publicId="category-women_kvxh2t.jpg" />
+          <Image alt="image" publicId="category-women_kvxh2t.jpg" width="363" />
         </div>
         <div className=" bg-gray-400">
-          <Image publicId="category-jewelry_txef2k.jpg" />
+          <Image
+            alt="image"
+            publicId="category-jewelry_txef2k.jpg"
+            width="363"
+          />
         </div>
         <div className=" bg-gray-400">
-          <Image publicId="category-men_d74ghz.jpg" />
+          <Image alt="image" publicId="category-men_d74ghz.jpg" width="363" />
         </div>
       </div>
     </div>
     <div className="px-3 py-6 border-t border-gray-300 mt-12">
-      <Image publicId="category-sale_p78qvm.jpg" />
+      <Image alt="image" publicId="category-sale_p78qvm.jpg" width="1200" />
     </div>
     <div className="px-3 py-6 border-t border-gray-300 mt-12 text-gray-600">
       *Promotional code will expire seven days from issue date. Code is valid on
