@@ -6,6 +6,9 @@ A proof of concept using a NextJS seed ready to be deployed with Vercel.
 
 - Lazy Image Loading
 - CSS Purged
+- Green on Lighthouse
+
+![Image of Lighthouse](https://res.cloudinary.com/vercel/image/upload/v1592422143/lighthouse_agjpn1.png)
 
 ### Tech Stack
 

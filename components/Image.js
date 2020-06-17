@@ -1,5 +1,4 @@
-import { Image } from "cloudinary-react";
-import React, { useState } from "react";
+import React from "react";
 import useNativeLazyLoading from "@charlietango/use-native-lazy-loading";
 import { useInView } from "react-intersection-observer";
 
