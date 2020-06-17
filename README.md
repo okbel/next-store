@@ -52,3 +52,4 @@ function Profile() {
 - NextJS with Prismic [https://github.com/vercel/next.js/tree/canary/examples/cms-prismic](https://github.com/vercel/next.js/tree/canary/examples/cms-prismic)
 - Data fetching with [SWR](https://swr.now.sh/)
 - [Nextjs Documentation](https://nextjs.org/docs/getting-started)
+- Incremental Static Generation [https://static-tweet.now.sh/](https://static-tweet.now.sh/)
