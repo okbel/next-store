@@ -4,7 +4,7 @@ A proof of concept using a NextJS seed ready to be deployed with Vercel.
 
 ### Features
 
-- Lazy Image Loading
+- Lazy Image Loading x2
 - CSS Purged
 - Green on Lighthouse
 
@@ -30,20 +30,19 @@ A proof of concept using a NextJS seed ready to be deployed with Vercel.
 
 [https://next-store-pi.vercel.app](https://next-store-pi.vercel.app)
 
-
 ## Data Fetching
 
 Using SWR:
 
 ```js
-import useSWR from 'swr'
+import useSWR from "swr";
 
 function Profile() {
-  const { data, error } = useSWR('/api/user', fetcher)
+  const { data, error } = useSWR("/api/user", fetcher);
 
-  if (error) return <div>failed to load</div>
-  if (!data) return <div>loading...</div>
-  return <div>hello {data.name}!</div>
+  if (error) return <div>failed to load</div>;
+  if (!data) return <div>loading...</div>;
+  return <div>hello {data.name}!</div>;
 }
 ```
 
