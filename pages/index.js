@@ -1,35 +1,33 @@
-import Banner from "../components/trr/Banner";
-import Footer from "../components/trr/Footer";
-import Header from "../components/trr/Header";
-import Main from "../components/trr/Main";
+import Link from "next/link";
 
-export async function getStaticProps() {
-  const menuLinks = [
-    "NEW ARRIVALS",
-    "DESIGNERS",
-    "WOMEN",
-    "MEN",
-    "JEWELRY",
-    "WATCHES",
-    "HOME",
-    "KIDS",
-    "SALE",
-  ];
-
-  return {
-    props: {
-      menuLinks,
-    },
-  };
-}
-
-export default function Home({ menuLinks }) {
-  return (
-    <>
-      <Banner />
-      <Header menuLinks={menuLinks} />
-      <Main />
-      <Footer />
-    </>
-  );
-}
+export default () => (
+  <div className="container mx-auto p-12">
+    <nav className="flex flex-col w-64">
+      <Link href="/example-ssg">
+        <a className="block mb-6 text-center rounded-lg bg-indigo-600 px-6 py-3 text-white">
+          Example SSG
+        </a>
+      </Link>
+      <Link href="/example-ssr">
+        <a className="block mb-6 text-center rounded-lg bg-indigo-600 px-6 py-3 text-white">
+          Example SSG
+        </a>
+      </Link>
+      <Link href="/common">
+        <a className="block mb-6 text-center rounded-lg bg-indigo-600 px-6 py-3 text-white">
+          E-Commerce Common
+        </a>
+      </Link>
+      <Link href="/pre">
+        <a className="block mb-6 text-center rounded-lg bg-indigo-600 px-6 py-3 text-white">
+          E-Commerce Skeleton
+        </a>
+      </Link>
+      <Link href="/home">
+        <a className="block mb-6 text-center rounded-lg bg-indigo-600 px-6 py-3 text-white">
+          E-Commerce Real Case Scenario
+        </a>
+      </Link>
+    </nav>
+  </div>
+);
