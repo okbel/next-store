@@ -2,12 +2,9 @@ import React from "react";
 import useNativeLazyLoading from "@charlietango/use-native-lazy-loading";
 import { useInView } from "react-intersection-observer";
 
-// This is a wrapper for cloudynary Image handler
-// Could be replace by any asset provider
-
-const CD_API =
-  process.env.CD_API ||
-  "https://res.cloudinary.com/vercel/image/upload/v1592403664/";
+const CD_BUCKET = "v1592403664" || process.env.CD_BUCKET;
+const CD_CLOUD = "vercel" || process.env.CD_CLOUD;
+const CD_API = `https://res.cloudinary.com/${CD_CLOUD}/image/upload/`;
 
 export default ({ width, height, publicId, ...rest }) => {
   let initialProps = { width, height, publicId, ...rest };
@@ -31,12 +28,11 @@ export default ({ width, height, publicId, ...rest }) => {
       }}
     >
       {inView || supportsLazyLoading ? (
-        // <Image loading="lazy" {...initialProps} />
         <img
           {...rest}
-          src={`https://res.cloudinary.com/vercel/image/upload/${
-            height ? `h_${height},` : ""
-          }${width ? `w_${width},` : ""}/v1592403664/${publicId}`}
+          src={`${CD_API}${height ? `h_${height},` : ""}${
+            width ? `w_${width},` : ""
+          }/${CD_BUCKET}/${publicId}`}
           width={width}
           height={height}
           loading="lazy"
