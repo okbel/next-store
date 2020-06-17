@@ -24,11 +24,19 @@
     "/_polyfills": [
       "static/runtime/polyfills.js"
     ],
-    "/home": [
+    "/example-ssg": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
     "/index": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/index-ssg": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/pre": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
