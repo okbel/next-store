@@ -1,3 +1,5 @@
+import Image from "../../components/Image";
+
 const Main = () => (
   <main className="container mx-auto relative py-6 px-10">
     <div className="bg-gray-400">
