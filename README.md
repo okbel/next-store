@@ -2,6 +2,8 @@
 
 A proof of concept using a NextJS seed ready to be deployed with Vercel.
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?c=1&s=https://github.com/okbel/next-store)
+
 ### Features
 
 - Lazy Image Loading x2
