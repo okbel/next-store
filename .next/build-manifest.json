@@ -19,10 +19,6 @@
     ],
     "/_polyfills": [
       "static/runtime/polyfills.js"
-    ],
-    "/home": [
-      "static/runtime/webpack.js",
-      "static/runtime/main.js"
     ]
   }
 }

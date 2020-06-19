@@ -20,16 +20,21 @@ export default ({
     triggerOnce: true,
     rootMargin: "200px 0px",
   });
-  const ready = inView || supportsLazyLoading;
-  const imgSrc = ready
-    ? `${CD_API}q_100,${height ? `h_${height},` : ""}${
-        width ? `w_${width},` : ""
-      }/${CD_BUCKET}/${publicId}`
-    : `${CD_API}q_${initialQuality},${
-        height ? `h_${(height / 10).toFixed(0)},` : ""
-      }${
-        width ? `w_${(width / 10).toFixed(0)},` : ""
-      }/${CD_BUCKET}/${publicId}`;
+  // const ready = inView || supportsLazyLoading;
+  // const imgSrc = ready
+  //   ? `${CD_API}q_100,${height ? `h_${height},` : ""}${
+  //       width ? `w_${width},` : ""
+  //     }/${CD_BUCKET}/${publicId}`
+  //   : `${CD_API}q_${initialQuality},${
+  //       height ? `h_${(height / 10).toFixed(0)},` : ""
+  //     }${
+  //       width ? `w_${(width / 10).toFixed(0)},` : ""
+  //     }/${CD_BUCKET}/${publicId}`;
+
+  const ready = false;
+  const imgSrc = `${CD_API}q_${initialQuality},${
+    height ? `h_${(height / 10).toFixed(0)},` : ""
+  }${width ? `w_${(width / 10).toFixed(0)},` : ""}/${CD_BUCKET}/${publicId}`;
 
   return (
     <div
