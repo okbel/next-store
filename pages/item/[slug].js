@@ -31,6 +31,5 @@ export async function getStaticProps({ params }) {
       slug: params.slug,
       updatedAt: Date.now(),
     },
-    unstable_revalidate: 20,
   };
 }

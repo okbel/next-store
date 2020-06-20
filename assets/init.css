@@ -14,20 +14,12 @@
   --nc-lk-tx: #ffffff;
   --nc-ac-1: #79ffe1;
   --nc-ac-tx: #0c4047;
+  --accents-1: #fafafa;
+  --accents-2: #eaeaea;
 }
 
-.body {
-  margin: 0 auto;
-  max-width: 750px;
-  padding: 2rem;
-  border-radius: 6px;
-  overflow-x: hidden;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  background: var(--nc-bg-1);
-  color: var(--nc-tx-2);
-  font-size: 1.03rem;
-  line-height: 1.5;
+body {
+  margin: 0;
 }
 
 *,
@@ -39,6 +31,32 @@
 
 html {
   font-family: var(--nc-font-sans);
+  line-height: 1.5;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+
+  to {
+    background-position: -200% 0;
+  }
+}
+
+.skeleton {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    270deg,
+    var(--accents-1),
+    var(--accents-2),
+    var(--accents-2),
+    var(--accents-1)
+  );
+  background-size: 400% 100%;
+  animation: loading 8s ease-in-out infinite;
 }
 
 @tailwind base;

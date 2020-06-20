@@ -2,7 +2,7 @@ import Image from "../../components/Image";
 
 const Main = () => (
   <main className="container mx-auto relative py-6 px-10">
-    <div className="bg-gray-400">
+    <div className="">
       <Image
         alt="image"
         publicId="top-banner.jpg"
@@ -12,14 +12,13 @@ const Main = () => (
       />
     </div>
     <div className="grid md:grid-cols-3 sm:grid-cols-1 grid-cols-1 gap-10 mt-6">
-      <div className="relative col-span-2 bg-gray-400 overflow-hidden">
+      <div className="relative col-span-2  overflow-hidden">
         <Image
           alt="image"
           publicId="product-bags_n9filt.jpg"
           className="w-full"
           width="786"
           height="507"
-          quality
         />
         <div className="absolute bg-white p-6 text-center bottom-0 w-full">
           <span className="text-2xl">Iconic Handbags</span>
@@ -60,7 +59,7 @@ const Main = () => (
       <h2 className="text-center text-2xl">Top Designers</h2>
       <div className="mt-5 grid gap-5 xl:grid-cols-6 sm:grid-cols-3 grid-cols-1 p-3">
         <div className="flex flex-col justify-center items-center">
-          <div className="text-center bg-gray-400 inline-block h-40 w-40 rounded-full">
+          <div className="text-center  inline-block h-40 w-40 rounded-full">
             <Image
               alt="image"
               publicId="designer-gucci.jpg"
@@ -73,7 +72,7 @@ const Main = () => (
           </span>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <div className="text-center bg-gray-400 inline-block h-40 w-40 rounded-full">
+          <div className="text-center  inline-block h-40 w-40 rounded-full">
             <Image
               alt="image"
               publicId="designer-burberry_xx9byy.jpg"
@@ -86,7 +85,7 @@ const Main = () => (
           </span>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <div className="text-center bg-gray-400 inline-block h-40 w-40 rounded-full">
+          <div className="text-center  inline-block h-40 w-40 rounded-full">
             <Image
               alt="image"
               publicId="designer-prada_jaxbna.jpg"
@@ -99,7 +98,7 @@ const Main = () => (
           </span>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <div className="text-center bg-gray-400 inline-block h-40 w-40 rounded-full">
+          <div className="text-center  inline-block h-40 w-40 rounded-full">
             <Image
               alt="image"
               publicId="designer-louboutin_gqnhf2.jpg"
@@ -112,7 +111,7 @@ const Main = () => (
           </span>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <div className="text-center bg-gray-400 inline-block h-40 w-40 rounded-full">
+          <div className="text-center  inline-block h-40 w-40 rounded-full">
             <Image
               alt="image"
               publicId="designer-louis-vuitton_mmzvod.jpg"
@@ -125,7 +124,7 @@ const Main = () => (
           </span>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <div className="text-center bg-gray-400 inline-block h-40 w-40 rounded-full">
+          <div className="text-center  inline-block h-40 w-40 rounded-full">
             <Image
               alt="image"
               publicId="designer-gucci.jpg"
@@ -142,7 +141,7 @@ const Main = () => (
     <div className="px-3 py-6 border-t border-gray-300 mt-12">
       <h2 className="text-center text-2xl">Top Categories</h2>
       <div className="mt-5 grid lg:grid-cols-3 gap-8 sm:grid-cols-1 p-3">
-        <div className=" bg-gray-400">
+        <div className=" ">
           <Image
             alt="image"
             publicId="category-women_kvxh2t.jpg"
@@ -150,7 +149,7 @@ const Main = () => (
             height="450"
           />
         </div>
-        <div className=" bg-gray-400">
+        <div className=" ">
           <Image
             alt="image"
             publicId="category-jewelry_txef2k.jpg"
@@ -158,7 +157,7 @@ const Main = () => (
             height="450"
           />
         </div>
-        <div className=" bg-gray-400">
+        <div className=" ">
           <Image
             alt="image"
             publicId="category-men_d74ghz.jpg"

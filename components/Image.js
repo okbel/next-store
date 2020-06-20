@@ -1,7 +1,8 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import useNativeLazyLoading from "@charlietango/use-native-lazy-loading";
 import { useInView } from "react-intersection-observer";
 import s from "./Image.module.css";
+import cn from "classnames";
 
 const CD_BUCKET = "v1592403664" || process.env.CD_BUCKET;
 const CD_CLOUD = "vercel" || process.env.CD_CLOUD;
@@ -15,15 +16,21 @@ export default ({
   initialQuality = 10,
   ...rest
 }) => {
+  const [loading, setLoading] = useState(true);
   const supportsLazyLoading = useNativeLazyLoading();
   const [ref, inView] = useInView({
     triggerOnce: true,
-    rootMargin: "200px 0px",
+    rootMargin: "220px 0px",
   });
-
   const ready = inView || supportsLazyLoading;
 
-  // The first render will try to load a bad quality image blured. Then, when in view, it will load the best
+  useEffect(() => {
+    // Setting loaded to true once, when it's appears in the viewport.
+    if (ready) {
+      setLoading(false);
+    }
+  }, [ready]);
+  // The first render will try to load a bad quality image blurred. Then, when in view, it will load the best
   // quality and display it as soon is ready.
   const imgSrc = ready
     ? `${CD_API}q_100,${height ? `h_${height},` : ""}${
@@ -38,7 +45,7 @@ export default ({
   return (
     <div
       ref={!supportsLazyLoading ? ref : undefined}
-      className={s.imgContainer}
+      className={cn(s.imgContainer, { [s.loading]: loading })}
       style={{
         paddingBottom: `${
           height > 0 && width > 0 ? (height / width) * 100 : 100
@@ -52,9 +59,6 @@ export default ({
         height={height}
         loading="lazy"
         className={s.img}
-        style={{
-          filter: ready ? "none" : `blur(${blur}px)`,
-        }}
       />
     </div>
   );
