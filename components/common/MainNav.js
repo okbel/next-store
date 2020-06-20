@@ -17,6 +17,9 @@ const MainNav = () => (
       <Link href="/example-ssr">
         <a className={s.btn}>Example Server Rendered (SSR)</a>
       </Link>
+      <Link href="/isg">
+        <a className={s.btn}>Incremental Static Generation</a>
+      </Link>
       <Link href="/common">
         <a className={s.btn}>E-Commerce Common</a>
       </Link>

@@ -1,5 +1,5 @@
 import Head from "../components/Head";
-import "../assets/tailwind.css";
+import "../assets/init.css";
 
 export default function MyApp({ Component, pageProps }) {
   return (
