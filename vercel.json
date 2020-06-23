@@ -1,0 +1,3 @@
+{
+  "routes": [{ "src": "/home", "dest": "examples/real" }]
+}
