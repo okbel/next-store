@@ -34,7 +34,7 @@ const MainNav = () => (
             <a className={s.btn}>E-Commerce Skeleton</a>
           </Link>
         </div>
-        <div className="w-1/3  h-12">
+        <div className={s.col}>
           <Link href="examples/real">
             <a className={s.btn}>E-Commerce Real Case Scenario</a>
           </Link>
