@@ -18,7 +18,7 @@
 }
 
 .loading {
-  > img {
+  img {
     filter: blur(15px);
   }
 }

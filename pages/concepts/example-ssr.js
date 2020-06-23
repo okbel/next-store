@@ -1,3 +1,5 @@
+import Layout from "../../components/core/Layout";
+
 export async function getServerSideProps() {
   await setTimeout(() => {
     // blocker function
@@ -12,8 +14,8 @@ export async function getServerSideProps() {
 
 export default function Example({ data }) {
   return (
-    <div className="p-6">
+    <Layout showGoBack>
       <div>This content is: {data}</div>
-    </div>
+    </Layout>
   );
 }

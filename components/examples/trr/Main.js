@@ -1,4 +1,4 @@
-import Image from "../../components/Image";
+import Image from "../../../components/core/Image";
 
 const Main = () => (
   <main className="container mx-auto relative py-6 px-10">

@@ -2,36 +2,46 @@ import Link from "next/link";
 import s from "./MainNav.module.css";
 
 const MainNav = () => (
-  <div>
-    <header className="py-6">
-      <h1 className="text-2xl font-semibold">next-store</h1>
-      <p className="py-4">
-        A proof of concept using a <strong>NextJS</strong> seed ready to be
-        deployed with <strong>Vercel</strong>.
-      </p>
-    </header>
-    <nav className="flex flex-col">
-      <Link href="/example-ssg">
-        <a className={s.btn}>Example Static Generation (SSG)</a>
-      </Link>
-      <Link href="/example-ssr">
-        <a className={s.btn}>Example Server Rendered (SSR)</a>
-      </Link>
-      <Link href="/isg">
-        <a className={s.btn}>Incremental Static Generation</a>
-      </Link>
-      <Link href="/common">
-        <a className={s.btn}>E-Commerce Common</a>
-      </Link>
-      <Link href="/pre">
-        <a className={s.btn}>E-Commerce Skeleton</a>
-      </Link>
-      <Link href="/home">
-        <a className={s.btn}>E-Commerce Real Case Scenario</a>
-      </Link>
-    </nav>
-    <p></p>
-    <footer>
+  <div className={s.root}>
+    <div className="flex flex-col">
+      Concepts:
+      <div className={s.row}>
+        <div className={s.col}>
+          <Link href="/concepts/example-ssg">
+            <a className={s.btn}>Static Generation (SSG)</a>
+          </Link>
+        </div>
+        <div className={s.col}>
+          <Link href="/concepts/example-ssr">
+            <a className={s.btn}>Server Rendered (SSR)</a>
+          </Link>
+        </div>
+        <div className={s.col}>
+          <Link href="/concepts/isg">
+            <a className={s.btn}>Incremental Static Generation</a>
+          </Link>
+        </div>
+      </div>
+      Real Scenario Examples:
+      <div className={s.row}>
+        <div className={s.col}>
+          <Link href="/examples/common">
+            <a className={s.btn}>E-Commerce Common</a>
+          </Link>
+        </div>
+        <div className={s.col}>
+          <Link href="/examples/skeleton">
+            <a className={s.btn}>E-Commerce Skeleton</a>
+          </Link>
+        </div>
+        <div className="w-1/3  h-12">
+          <Link href="examples/real">
+            <a className={s.btn}>E-Commerce Real Case Scenario</a>
+          </Link>
+        </div>
+      </div>
+    </div>
+    <footer className="mt-12">
       Built by <strong>Vercel ▲</strong> with{" "}
       <svg
         width="80px"
@@ -40,18 +50,11 @@ const MainNav = () => (
         className="inline ml-3"
       >
         <defs />
-        <g
-          id="Page-1"
-          stroke="none"
-          stroke-width="1"
-          fill="none"
-          fill-rule="evenodd"
-        >
+        <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
           <g
-            id="Black-Next.js"
             transform="translate(-247.000000, -138.000000)"
             fill="#000000"
-            fill-rule="nonzero"
+            fillRule="nonzero"
           >
             <g id="next-black" transform="translate(247.000000, 138.000000)">
               <g id="EXT-+-Type-something">

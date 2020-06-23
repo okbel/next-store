@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
-import Layout from "../components/core/Layout";
-import { generateRandom } from "../helpers/uuid";
+import Layout from "../../components/core/Layout";
+import { generateRandom } from "../../helpers/uuid";
 export default function Isg() {
   const [rand, setRand] = useState(generateRandom());
 
@@ -11,7 +11,7 @@ export default function Isg() {
   };
 
   return (
-    <Layout>
+    <Layout showGoBack>
       <h1>Incremental Static Generation - Fallback Mode</h1>
       <p>
         Big and complex systems with many web pages encounter the issue of
@@ -39,7 +39,7 @@ export default function Isg() {
         </li>
         <li>It's fully automatic, no need to trigger a full rebuild</li>
       </ul>
-      <Link href="/item/[slug]" as={`/item/${rand}`}>
+      <Link href="/concepts/item/[slug]" as={`/concepts/item/${rand}`}>
         <button>Go to {rand}</button>
       </Link>
       <a className="block mt-4 cursor-pointer" onClick={changeRand}>

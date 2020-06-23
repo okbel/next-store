@@ -1,3 +1,5 @@
+import Layout from "../../components/core/Layout";
+
 export async function getStaticProps() {
   return {
     props: {
@@ -8,8 +10,8 @@ export async function getStaticProps() {
 
 export default function Example({ data }) {
   return (
-    <div className="p-6">
+    <Layout showGoBack>
       <div>This content is: {data}</div>
-    </div>
+    </Layout>
   );
 }

@@ -1,9 +1,8 @@
-import MainNav from "../components/common/MainNav";
+import Layout from "../components/core/Layout";
+import MainNav from "../components/core/MainNav";
 
 export default () => (
-  <div className="tw">
-    <div className="container mx-auto p-12">
-      <MainNav />
-    </div>
-  </div>
+  <Layout>
+    <MainNav />
+  </Layout>
 );

@@ -1,7 +1,7 @@
-import Banner from "../components/trr/Banner";
-import Footer from "../components/trr/Footer";
-import Header from "../components/trr/Header";
-import Main from "../components/trr/Main";
+import Banner from "../../components/examples/trr/Banner";
+import Footer from "../../components/examples/trr/Footer";
+import Header from "../../components/examples/trr/Header";
+import Main from "../../components/examples/trr/Main";
 
 export async function getStaticProps() {
   const menuLinks = [
