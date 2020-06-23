@@ -1,7 +1,7 @@
-import Layout from "../components/core/Layout";
 import Link from "next/link";
-import { generateRandom } from "../helpers/uuid";
 import { useState } from "react";
+import Layout from "../components/core/Layout";
+import { generateRandom } from "../helpers/uuid";
 export default function Isg() {
   const [rand, setRand] = useState(generateRandom());
 
@@ -39,7 +39,7 @@ export default function Isg() {
         </li>
         <li>It's fully automatic, no need to trigger a full rebuild</li>
       </ul>
-      <Link href={`/item/${rand}`}>
+      <Link href="/item/[slug]" as={`/item/${rand}`}>
         <button>Go to {rand}</button>
       </Link>
       <a className="block mt-4 cursor-pointer" onClick={changeRand}>
