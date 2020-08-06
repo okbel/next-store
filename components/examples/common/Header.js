@@ -53,7 +53,7 @@ export default function Header() {
               Home & Furniture
             </a>
             <a href="#" className={s.menuLink}>
-              Jewlery
+              Jewelry
             </a>
             <a href="#" className={s.menuLink}>
               Watches

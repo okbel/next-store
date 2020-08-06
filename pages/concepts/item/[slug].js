@@ -2,7 +2,7 @@ import Layout from "../../../components/core/Layout";
 
 export default function IncrementalPage({ slug, updatedAt }) {
   return (
-    <Layout showGoBack>
+    <Layout showGoBack styled>
       <p>This page has been Incrementally built.</p>
       <div>Slug: {slug}</div>
       <div>Updated At: {new Date(updatedAt).toLocaleTimeString()}</div>
@@ -30,6 +30,10 @@ export async function getStaticProps({ params }) {
     props: {
       slug: params.slug,
       updatedAt: Date.now(),
+      // we will attempt to re-generate the page:
+      // - when a request comes in
+      // - at most once every second
+      revalidate: 1,
     },
   };
 }

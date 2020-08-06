@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "product": "productos"
+  },
+  "content": {
+    "title": "Tus Productos",
+    "description": "Aquí puedes encontrar los mejores productos"
+  }
+}

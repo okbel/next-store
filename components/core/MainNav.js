@@ -7,18 +7,18 @@ const MainNav = () => (
       Concepts:
       <div className={s.row}>
         <div className={s.col}>
-          <Link href="/concepts/example-ssg">
+          <Link href="/concepts/ssg">
             <a className={s.btn}>Static Generation (SSG)</a>
           </Link>
         </div>
         <div className={s.col}>
-          <Link href="/concepts/example-ssr">
+          <Link href="/concepts/ssr">
             <a className={s.btn}>Server Rendered (SSR)</a>
           </Link>
         </div>
         <div className={s.col}>
-          <Link href="/concepts/isg">
-            <a className={s.btn}>Incremental Static Generation</a>
+          <Link href="/concepts/isr">
+            <a className={s.btn}>Incremental Static Regeneration</a>
           </Link>
         </div>
       </div>

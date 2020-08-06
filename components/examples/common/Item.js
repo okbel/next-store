@@ -13,7 +13,7 @@ function Item({ img = "", title = "", desc = "", price = "0" }) {
         <div className="flex-1">
           <p className="text-sm leading-5 font-medium text-indigo-600 uppercase tracking-wide text-sm text-indigo-600 font-bold">
             <a href="#" className="hover:underline">
-              JEWLERY
+              Jewelry
             </a>
           </p>
           <a href="#" className="block">
