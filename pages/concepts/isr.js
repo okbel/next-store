@@ -17,7 +17,7 @@ export default function Isg() {
       <p>
         Big and complex systems with many web pages encounter the issue of
         having to re-build an entire app for each deploy. Systems like this
-        usually deal with this issue bsy using{" "}
+        usually deal with this issue by using{" "}
         <strong>server side rendering</strong> and a caching layer (e.g Varnish)
       </p>
       <p>
