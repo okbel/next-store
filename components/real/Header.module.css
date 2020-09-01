@@ -1,0 +1,22 @@
+.root {
+  @apply flex justify-between items-center py-8 relative;
+  width: 100%;
+}
+
+.logo {
+  @apply text-3xl absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav {
+  @apply flex justify-between items-center;
+}
+
+.link {
+  @apply mr-6 uppercase text-xs;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

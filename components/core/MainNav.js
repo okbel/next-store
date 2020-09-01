@@ -22,7 +22,7 @@ const MainNav = () => (
           </Link>
         </div>
       </div>
-      Real Scenario Examples:
+      Examples:
       <div className={s.row}>
         <div className={s.col}>
           <Link href="/examples/common">
@@ -40,6 +40,16 @@ const MainNav = () => (
           </Link>
         </div>
       </div>
+    </div>
+    Real Case Scenario:
+    <div className={s.row}>
+      <div className={s.col}>
+        <Link href="/real/store-0">
+          <a className={s.btn}>Clothing E-Commerce (WIP)</a>
+        </Link>
+      </div>
+      <div className={s.col}></div>
+      <div className={s.col}></div>
     </div>
     <footer className="mt-12">
       Built by <strong>Vercel ▲</strong> with{" "}

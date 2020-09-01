@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "@charlietango/use-native-lazy-loading": "^1.7.1",
+    "contentful": "^7.14.6",
     "intersection-observer": "^0.10.0",
     "next": "^9.4.4",
     "postcss-exclude-files": "^1.0.15",

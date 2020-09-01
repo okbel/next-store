@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/ui/*": ["components/ui/*"],
+      "@/lib/*": ["lib/*"],
+      "@/core/*": ["components/core/*"],
+      "@/assets/*": ["assets/*"],
+      "@/components/*": ["components/*"]
+    }
+  }
+}
