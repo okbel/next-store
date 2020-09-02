@@ -1,8 +1,11 @@
 import Header from "@/components/real/Header";
-import ArticleWidget from "@/components/real/ArticleWidget";
 import BlogWidget from "@/components/real/BlogWidget";
-import ReadWidget from "@/components/real/ReadWidget";
+import ShopWidget from "@/components/real/ShopWidget";
 import MainReadWidget from "@/components/real/MainReadWidget";
+import ReadWidget from "@/components/real/ReadWidget";
+import ReadWidgetRow from "@/components/real/ReadWidgetRow";
+import ArticleWidget from "@/components/real/ArticleWidget";
+import ArticleWidgetRow from "@/components/real/ArticleWidgetRow";
 
 export async function getStaticProps() {
   const articles = [
@@ -82,12 +85,14 @@ export async function getStaticProps() {
 
   const shop = [
     {
-      imgId: "",
-      title: "To Be Continued: The NBA Is Back",
+      imgId: "pslvzfu9arefxepbdt2m_lyfbwm.jpg",
+      title: "Vans",
+      text: "Shop Men",
     },
     {
-      imgId: "",
-      title: "To Be Continued: The NBA Is Back",
+      imgId: "n4k5rwrhzbqfbbrtc8xz_ryzvpr.jpg",
+      title: "Vans",
+      text: "Shop Woman",
     },
   ];
 
@@ -97,7 +102,7 @@ export async function getStaticProps() {
   };
 }
 
-export default ({ articles, read }) => (
+export default ({ articles, read, shop }) => (
   <div className="max-w-screen-xl mx-auto pt-12">
     <Header />
     <main>
@@ -117,13 +122,58 @@ export default ({ articles, read }) => (
       <div className="flex space-between my-8 -mx-40">
         <MainReadWidget />
         {read.map((data) => (
-          <ReadWidget {...data} />
+          <ReadWidgetRow {...data} />
         ))}
       </div>
+      <div className="flex justify-between justify-center -mx-24 mt-24 mb-24 px-10">
+        {shop.map((data) => (
+          <ShopWidget {...data} />
+        ))}
+      </div>
+      <div className="flex justify-between my-8 -mx-40">
+        <div className="flex flex-col grow items-start ">
+          <ArticleWidgetRow {...articles[5]} row />
+          <ArticleWidgetRow {...articles[6]} row />
+        </div>
+        <div
+          className="flex grow-0"
+          style={{ flexBasis: "calc((((100vw) / 5) * 1) - 30px)" }}
+        >
+          <BlogWidget {...articles[4]} />
+        </div>
+        <div
+          className="flex grow-0 flex-col"
+          style={{ flexBasis: "calc((((100vw - 30px) / 5) * 1) - 30px)" }}
+        >
+          {read.map((data) => (
+            <ReadWidget {...data} />
+          ))}
+        </div>
+      </div>
+      <div className="flex content-between justify-center -mx-24 mt-8 mb-24 px-10">
+        <ArticleWidget {...articles[5]} />
+        <ArticleWidget {...articles[6]} />
+      </div>
+      <div className="flex justify-between justify-center -mx-24 mt-24 mb-24 px-10">
+        {shop.map((data) => (
+          <ShopWidget {...data} />
+        ))}
+      </div>
+      <div className="flex content-between justify-center my-8 -mx-48 px-10">
+        <BlogWidget {...articles[2]} />
+        <BlogWidget {...articles[3]} />
+        <BlogWidget {...articles[4]} />
+      </div>
       <div className="flex space-between my-8 -mx-40">
-        <div className="flex grid-rows-10 bg-primary bg-gray-400 px-4 py-2 m-2"></div>
-        <div className="flex grid-rows-1 bg-primary bg-gray-400 px-4 py-2 m-2"></div>
-        <div className="flex grid-rows-1 bg-primary bg-gray-400 px-4 py-2 m-2"></div>
+        <MainReadWidget />
+        {read.map((data) => (
+          <ReadWidgetRow {...data} />
+        ))}
+      </div>
+      <div className="flex content-between justify-center my-8 -mx-48 px-10">
+        <BlogWidget {...articles[2]} />
+        <BlogWidget {...articles[3]} />
+        <BlogWidget {...articles[4]} />
       </div>
     </main>
     <footer></footer>

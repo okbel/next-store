@@ -1,11 +1,12 @@
 .root {
-  @apply flex;
   border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
   padding: 0.625rem 0;
+  @apply mr-6 flex;
   width: 100%;
 
   &:last-child {
-    border-bottom: 1px solid #979797;
+    margin-right: 0;
   }
 }
 

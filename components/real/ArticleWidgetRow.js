@@ -1,24 +1,23 @@
-import s from "./ArticleWidget.module.css";
+import s from "./ArticleWidgetRow.module.css";
 import Image from "@/components/core/Image";
-import cn from "classnames";
 
-const ArticleWidget = ({ title, category, description, imgId }) => (
+const ArticleWidgetRow = ({ title, category, description, imgId }) => (
   <article className={s.root}>
     <figure className={s.figure}>
       <Image
         publicId={imgId}
         alt="image"
-        width="690"
-        height="493"
+        width="424"
+        height="302"
         className={s.img}
       />
     </figure>
     <div className={s.header}>
-      <span className={s.category}>{category}</span>
       <h2 className={s.title}>{title}</h2>
+      <span className={s.category}>{category}</span>
+      <p className={s.description}>{description}</p>
     </div>
-    <p className={s.description}>{description}</p>
   </article>
 );
 
-export default ArticleWidget;
+export default ArticleWidgetRow;

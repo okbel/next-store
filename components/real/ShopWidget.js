@@ -1,30 +1,23 @@
-import s from "./BlogWidget.module.css";
+import s from "./ShopWidget.module.css";
 import Image from "@/components/core/Image";
 
-const BlogWidget = ({
-  title = "Don't forget your mask",
-  date = "Aug 24",
-  category = "Culture",
-  imgId,
-}) => (
-  <article className={s.root}>
+const ShopWidget = ({ title = "", text = "", imgId = "" }) => (
+  <div className={s.root}>
     <figure>
       <Image
+        className={s.img}
         publicId={imgId}
         alt="image"
-        width="493"
-        height="657"
-        className={s.img}
+        width="690"
+        height="493"
       />
     </figure>
     <div className={s.header}>
       <span className={s.category}>Featured</span>
       <h2 className={s.title}>{title}</h2>
-      <p className={s.description}>
-        {category} | {date}
-      </p>
     </div>
-  </article>
+    <button className={s.btn}>{text}</button>
+  </div>
 );
 
-export default BlogWidget;
+export default ShopWidget;
