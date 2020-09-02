@@ -42,14 +42,14 @@ export default ({
         width ? `w_${(width / 10).toFixed(0)},` : ""
       }/${CD_BUCKET}/${publicId}`;
 
+  const pdB = (height / width) * 100;
+
   return (
     <div
       ref={!supportsLazyLoading ? ref : undefined}
       className={cn(s.imgContainer, { [s.loading]: loading })}
       style={{
-        paddingBottom: `${
-          height > 0 && width > 0 ? (height / width) * 100 : 100
-        }%`,
+        paddingBottom: `${height > 0 && width > 0 ? pdB.toFixed(1) : 100}%`,
       }}
     >
       <img

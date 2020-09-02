@@ -1,13 +1,16 @@
 import s from "./ReadWidget.module.css";
+import Image from "@/components/core/Image";
 
-const BlogWidget = ({
-  title = "Don't forget your mask",
-  date = "Aug 24",
-  category = "Culture",
-}) => (
+const BlogWidget = ({ title = "", category = "", imgId = "" }) => (
   <div className={s.root}>
     <figure className={s.side}>
-      <img className={s.img} />
+      <Image
+        publicId={imgId}
+        alt="image"
+        width="95"
+        height="127"
+        className={s.img}
+      />
     </figure>
     <div className={s.header}>
       <span className={s.title}>{title}</span>

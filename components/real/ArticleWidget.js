@@ -1,19 +1,23 @@
 import s from "./ArticleWidget.module.css";
+import Image from "@/components/core/Image";
 
-const ArticleWidget = () => (
+const ArticleWidget = ({ title, category, description, imgId }) => (
   <article className={s.root}>
-    <figure>
-      <img className={s.img} />
+    <figure className={s.figure}>
+      <Image
+        publicId={imgId}
+        alt="image"
+        width="690"
+        height="493"
+        className={s.img}
+      />
     </figure>
     <div>
       <div className={s.header}>
-        <span className={s.category}>Fashion</span>
-        <h2 className={s.title}>Creative Liaisons with Kyuhee Baik</h2>
+        <span className={s.category}>{category}</span>
+        <h2 className={s.title}>{title}</h2>
       </div>
-      <p className={s.description}>
-        From Hyein Seo to Stüssy, the Creative Strategist on South Korea’s
-        Ascent
-      </p>
+      <p className={s.description}>{description}</p>
     </div>
   </article>
 );

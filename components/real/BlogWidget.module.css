@@ -1,5 +1,5 @@
 .root {
-  @apply mr-6;
+  @apply flex-1 mr-6;
 
   &:last-child {
     @apply mr-0;
@@ -11,10 +11,11 @@
   letter-spacing: -0.00313rem;
   font-size: 16px;
   @apply mr-8 uppercase;
+  margin-top: 2px;
 }
 
 .header {
-  @apply flex items-center mt-6;
+  @apply flex items-start mt-4;
 }
 
 .title {

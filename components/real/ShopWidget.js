@@ -18,13 +18,11 @@ const BlogWidget = ({
       />
     </figure>
     <div className={s.header}>
-      <span className={s.category}>Recent</span>
-      <div>
-        <h2 className={s.title}>{title}</h2>
-        <p className={s.description}>
-          {category} | {date}
-        </p>
-      </div>
+      <span className={s.category}>Featured</span>
+      <h2 className={s.title}>{title}</h2>
+      <p className={s.description}>
+        {category} | {date}
+      </p>
     </div>
   </article>
 );

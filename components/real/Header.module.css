@@ -1,6 +1,15 @@
 .root {
-  @apply flex justify-between items-center py-8 relative;
+  @apply flex justify-between items-center relative;
+  position: fixed;
+  background-color: white;
   width: 100%;
+  top: 0;
+  left: 0;
+  height: 55px;
+  line-height: 55px;
+  padding-left: 55px;
+  padding-right: 55px;
+  z-index: 10;
 }
 
 .logo {
