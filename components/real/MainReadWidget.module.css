@@ -1,8 +1,8 @@
 .root {
+  @apply mr-6 flex flex-col justify-between;
   border-top: 1px solid #979797;
   border-bottom: 1px solid #979797;
   padding: 0.625rem 0;
-  @apply mr-6 flex flex-col justify-between;
   width: 100%;
 
   &:last-child {
@@ -11,7 +11,9 @@
 }
 
 .title {
-  @apply uppercase text-4xl;
+  @apply uppercase;
+  font: lighter normal 2.375rem/2.75rem Favorit SSENSE Inter1;
+  letter-spacing: -0.07812rem;
   letter-spacing: 1px;
   color: rgb(51, 51, 51);
 }

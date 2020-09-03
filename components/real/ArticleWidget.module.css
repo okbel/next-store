@@ -7,11 +7,11 @@
 }
 
 .category {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: rgb(51, 51, 51);
-  letter-spacing: -0.00313rem;
-  font-size: 18px;
   @apply mr-8;
+
+  color: rgb(51, 51, 51);
+  font: lighter normal 0.9375rem/1.125rem JHA Times Now;
+  letter-spacing: -0.00313rem;
 }
 
 .header {
@@ -19,19 +19,18 @@
 }
 
 .title {
+  @apply inline uppercase;
   color: rgb(51, 51, 51);
-  font-weight: 300;
-  letter-spacing: 1px;
-  @apply inline uppercase text-xl;
+  margin: 0;
+  font: lighter normal 1.125rem/1.5rem Favorit SSENSE Inter1;
+  letter-spacing: -0.01562rem;
 }
 
 .description {
-  @apply mr-12;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  @apply mt-1 mr-12;
   color: rgb(51, 51, 51);
+  font: lighter normal 1.25rem/1.625rem JHA Times Now;
   letter-spacing: -0.00313rem;
-  font-size: 18px;
-  font-weight: 200;
   width: 100%;
 }
 

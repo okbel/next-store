@@ -1,0 +1,46 @@
+.root {
+  @apply mx-auto pt-12 p-2;
+  max-width: 1680px;
+
+  font-family: Favorit SSENSE Inter;
+  font-weight: 400;
+  color: #000;
+  font-size: 11px;
+  line-height: 15px;
+  background-color: #fff;
+  text-rendering: optimizeLegibility;
+
+  > section {
+    padding: 0 2.5rem;
+    @apply flex content-between justify-center my-16;
+  }
+
+  > section:nth-child(3),
+  > section:nth-child(5),
+  > section:nth-child(7),
+  > section:nth-child(8) {
+    padding: 0 7.5rem;
+  }
+
+  > section:nth-child(1) {
+    @apply mt-16;
+    padding: 0 7.5rem;
+  }
+
+  > section:nth-child(6) {
+    > div {
+      flex-basis: calc((((100vw - 30px) / 5) * 1) - 30px);
+      margin: 0 20px;
+    }
+
+    > div:first-child {
+      @apply flex flex-1 flex-col items-start;
+      flex-basis: calc((((100vw - 30px) / 5) * 3) - 15px);
+    }
+
+    > div:last-child {
+      @apply flex flex-col;
+      flexbasis: calc((((100vw - 30px) / 5) * 1) - 30px);
+    }
+  }
+}

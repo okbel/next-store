@@ -6,6 +6,8 @@ import ReadWidget from "@/components/real/ReadWidget";
 import ReadWidgetRow from "@/components/real/ReadWidgetRow";
 import ArticleWidget from "@/components/real/ArticleWidget";
 import ArticleWidgetRow from "@/components/real/ArticleWidgetRow";
+import MainContainer from "@/components/real/MainContainer";
+import CTA from "@/components/real/CTA";
 
 export async function getStaticProps() {
   const articles = [
@@ -96,86 +98,98 @@ export async function getStaticProps() {
     },
   ];
 
+  const cta = {
+    title: "Weekender Bags And The Luxury of Escape",
+    description: "Getting Away, For Those Who Can...",
+    text: "View Editorial",
+  };
+
   const interviews = [];
   return {
-    props: { articles, read, shop, interviews },
+    props: { articles, read, shop, interviews, cta },
   };
 }
 
-export default ({ articles, read, shop }) => (
-  <div className="max-w-screen-xl mx-auto pt-12">
+export default ({ articles, read, shop, cta }) => (
+  <>
     <Header />
-    <main>
-      <div className="flex content-between justify-center mt-4 mb-10 -mx-24 px-10">
+    <MainContainer>
+      <section>
         <ArticleWidget {...articles[0]} />
         <ArticleWidget {...articles[1]} />
-      </div>
-      <div className="flex content-between justify-center my-8 -mx-48 px-10">
+      </section>
+      <section>
         <BlogWidget {...articles[2]} />
         <BlogWidget {...articles[3]} />
         <BlogWidget {...articles[4]} />
-      </div>
-      <div className="flex content-between justify-center -mx-24 mt-8 mb-24 px-10">
+      </section>
+      <section>
         <ArticleWidget {...articles[5]} />
         <ArticleWidget {...articles[6]} />
-      </div>
-      <div className="flex space-between my-8 -mx-40">
+      </section>
+      <section>
         <MainReadWidget />
         {read.map((data) => (
           <ReadWidgetRow {...data} />
         ))}
-      </div>
-      <div className="flex justify-between justify-center -mx-24 mt-24 mb-24 px-10">
+      </section>
+      <section>
         {shop.map((data) => (
           <ShopWidget {...data} />
         ))}
-      </div>
-      <div className="flex justify-between my-8 -mx-40">
-        <div className="flex flex-col grow items-start ">
-          <ArticleWidgetRow {...articles[5]} row />
-          <ArticleWidgetRow {...articles[6]} row />
+      </section>
+      <section>
+        <div>
+          <ArticleWidgetRow {...articles[5]} />
+          <ArticleWidgetRow {...articles[6]} />
         </div>
-        <div
-          className="flex grow-0"
-          style={{ flexBasis: "calc((((100vw) / 5) * 1) - 30px)" }}
-        >
+        <div>
           <BlogWidget {...articles[4]} />
         </div>
-        <div
-          className="flex grow-0 flex-col"
-          style={{ flexBasis: "calc((((100vw - 30px) / 5) * 1) - 30px)" }}
-        >
+        <div>
           {read.map((data) => (
             <ReadWidget {...data} />
           ))}
         </div>
-      </div>
-      <div className="flex content-between justify-center -mx-24 mt-8 mb-24 px-10">
+      </section>
+      <section>
         <ArticleWidget {...articles[5]} />
         <ArticleWidget {...articles[6]} />
-      </div>
-      <div className="flex justify-between justify-center -mx-24 mt-24 mb-24 px-10">
+      </section>
+      <section>
         {shop.map((data) => (
           <ShopWidget {...data} />
         ))}
-      </div>
-      <div className="flex content-between justify-center my-8 -mx-48 px-10">
+      </section>
+      <section>
+        <CTA {...cta} />
+      </section>
+      <section>
         <BlogWidget {...articles[2]} />
         <BlogWidget {...articles[3]} />
         <BlogWidget {...articles[4]} />
-      </div>
-      <div className="flex space-between my-8 -mx-40">
+      </section>
+      <section>
         <MainReadWidget />
         {read.map((data) => (
           <ReadWidgetRow {...data} />
         ))}
-      </div>
-      <div className="flex content-between justify-center my-8 -mx-48 px-10">
+      </section>
+      <section>
         <BlogWidget {...articles[2]} />
         <BlogWidget {...articles[3]} />
         <BlogWidget {...articles[4]} />
-      </div>
-    </main>
-    <footer></footer>
-  </div>
+      </section>
+      <section>
+        <MainReadWidget />
+        {read.map((data) => (
+          <ReadWidgetRow {...data} />
+        ))}
+      </section>
+    </MainContainer>
+    <footer>
+      {/* © 2020 ssense.com COUNTRY/REGION: ARGENTINA NEWSLETTER SIGNUP CUSTOMER
+      CARELOCATIONS EDITORIAL ARCHIVECAREERSAFFILIATESSITEMAP */}
+    </footer>
+  </>
 );

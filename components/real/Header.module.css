@@ -1,4 +1,5 @@
 .root {
+  font-family: Favorit SSENSE Inter;
   @apply flex justify-between items-center relative;
   position: fixed;
   background-color: white;
@@ -13,9 +14,11 @@
 }
 
 .logo {
-  @apply text-3xl absolute;
+  @apply text-2xl absolute;
   left: 50%;
   transform: translateX(-50%);
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .nav {
@@ -24,7 +27,10 @@
 
 .link {
   @apply mr-6 uppercase text-xs;
-
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 11px;
   &:last-child {
     margin-right: 0;
   }

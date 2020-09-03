@@ -1,0 +1,102 @@
+@font-face {
+  font-family: plain;
+  src: url("//res.cloudinary.com/ssenseweb/raw/upload/v1427392336/web/fonts/plain/plain-regular-webfont.eot");
+  src: url("//res.cloudinary.com/ssenseweb/raw/upload/v1427392336/web/fonts/plain/plain-regular-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("//res.cloudinary.com/ssenseweb/raw/upload/v1427392336/web/fonts/plain/plain-regular-webfont.woff2")
+      format("woff2"),
+    url("//res.cloudinary.com/ssenseweb/raw/upload/v1427392336/web/fonts/plain/plain-regular-webfont.woff")
+      format("woff"),
+    url("//res.cloudinary.com/ssenseweb/raw/upload/v1427392336/web/fonts/plain/plain-regular-webfont.ttf")
+      format("truetype"),
+    url("//res.cloudinary.com/ssenseweb/raw/upload/v1427392336/web/fonts/plain/plain-regular-webfont.svg#plainregular")
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: plain;
+  src: url("//res.cloudinary.com/ssenseweb/raw/upload/v1427392336/web/fonts/plain/plain-medium-webfont.eot");
+  src: url("//res.cloudinary.com/ssenseweb/raw/upload/v1427392336/web/fonts/plain/plain-medium-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("//res.cloudinary.com/ssenseweb/raw/upload/v1427392336/web/fonts/plain/plain-medium-webfont.woff2")
+      format("woff2"),
+    url("//res.cloudinary.com/ssenseweb/raw/upload/v1427392336/web/fonts/plain/plain-medium-webfont.woff")
+      format("woff"),
+    url("//res.cloudinary.com/ssenseweb/raw/upload/v1427392336/web/fonts/plain/plain-medium-webfont.ttf")
+      format("truetype"),
+    url("//res.cloudinary.com/ssenseweb/raw/upload/v1427392336/web/fonts/plain/plain-medium-webfont.svg#plainmedium")
+      format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: plain;
+  src: url("//res.cloudinary.com/ssenseweb/raw/upload/v1427392336/web/fonts/plain/plain-bold-webfont.eot");
+  src: url("//res.cloudinary.com/ssenseweb/raw/upload/v1427392336/web/fonts/plain/plain-bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("//res.cloudinary.com/ssenseweb/raw/upload/v1427392336/web/fonts/plain/plain-bold-webfont.woff2")
+      format("woff2"),
+    url("//res.cloudinary.com/ssenseweb/raw/upload/v1427392336/web/fonts/plain/plain-bold-webfont.woff")
+      format("woff"),
+    url("//res.cloudinary.com/ssenseweb/raw/upload/v1427392336/web/fonts/plain/plain-bold-webfont.ttf")
+      format("truetype"),
+    url("//res.cloudinary.com/ssenseweb/raw/upload/v1427392336/web/fonts/plain/plain-bold-webfont.svg#plainbold")
+      format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Favorit SSENSE Inter;
+  src: url("//res.cloudinary.com/ssenseweb/raw/upload/v1504879826/web/fonts/favorit-times/FavoritSSENSE-Inter.eot");
+  src: url("//res.cloudinary.com/ssenseweb/raw/upload/v1504879826/web/fonts/favorit-times/FavoritSSENSE-Inter.eot?#iefix")
+      format("embedded-opentype"),
+    url("//res.cloudinary.com/ssenseweb/raw/upload/v1504879826/web/fonts/favorit-times/FavoritSSENSE-Inter.woff2")
+      format("woff2"),
+    url("//res.cloudinary.com/ssenseweb/raw/upload/v1504879826/web/fonts/favorit-times/FavoritSSENSE-Inter.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Favorit SSENSE Inter1;
+  src: url("//res.cloudinary.com/ssenseweb/raw/upload/v1504879826/web/fonts/favorit-times/FavoritSSENSE-Inter.eot");
+  src: url("//res.cloudinary.com/ssenseweb/raw/upload/v1504879826/web/fonts/favorit-times/FavoritSSENSE-Inter.eot?#iefix")
+      format("embedded-opentype"),
+    url("//res.cloudinary.com/ssenseweb/raw/upload/v1504879826/web/fonts/favorit-times/FavoritSSENSE-Inter.woff2")
+      format("woff2"),
+    url("//res.cloudinary.com/ssenseweb/raw/upload/v1504879826/web/fonts/favorit-times/FavoritSSENSE-Inter.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Favorit SSENSE Regular;
+  src: url("//res.cloudinary.com/ssenseweb/raw/upload/v1504879826/web/fonts/favorit-times/FavoritSSENSE-Regular.eot");
+  src: url("//res.cloudinary.com/ssenseweb/raw/upload/v1504879826/web/fonts/favorit-times/FavoritSSENSE-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("//res.cloudinary.com/ssenseweb/raw/upload/v1504879826/web/fonts/favorit-times/FavoritSSENSE-Regular.woff2")
+      format("woff2"),
+    url("//res.cloudinary.com/ssenseweb/raw/upload/v1504879826/web/fonts/favorit-times/FavoritSSENSE-Regular.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: JHA Times Now;
+  src: url("//res.cloudinary.com/ssenseweb/raw/upload/v1493055756/web/fonts/favorit-times/TimesNow-SemiLight.eot");
+  src: url("//res.cloudinary.com/ssenseweb/raw/upload/v1493055756/web/fonts/favorit-times/TimesNow-SemiLight.eot?#iefix")
+      format("embedded-opentype"),
+    url("//res.cloudinary.com/ssenseweb/raw/upload/v1493055756/web/fonts/favorit-times/TimesNow-SemiLight.woff2")
+      format("woff2"),
+    url("//res.cloudinary.com/ssenseweb/raw/upload/v1493055756/web/fonts/favorit-times/TimesNow-SemiLight.woff")
+      format("woff");
+  font-weight: 400;
+  font-style: normal;
+}

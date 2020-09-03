@@ -1,8 +1,8 @@
 import s from "./MainReadWidget.module.css";
 
-const BlogWidget = ({}) => (
+const BlogWidget = ({ headline = "A GOOD READ" }) => (
   <div className={s.root}>
-    <span className={s.title}>A Good Read</span>
+    <h2 className={s.title}>{headline}</h2>
     <a className={s.link}>View All Stories</a>
   </div>
 );

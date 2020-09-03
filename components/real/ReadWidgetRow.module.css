@@ -21,11 +21,9 @@
 
 .title {
   @apply uppercase text-center;
-  line-height: 18px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  font-size: 14px;
   color: rgb(51, 51, 51);
+  font: lighter normal 0.89062rem/1.125rem Favorit SSENSE Inter1;
+  letter-spacing: -0.00313rem;
 }
 
 .header {
@@ -33,9 +31,7 @@
 }
 
 .category {
-  font-family: Georgia, "Times New Roman", Times, serif;
   color: rgb(51, 51, 51);
-  font-weight: 100;
-  font-size: 14px;
-  letter-spacing: 0.5px;
+  font: lighter normal 0.9375rem/1.125rem JHA Times Now;
+  letter-spacing: -0.00313rem;
 }
