@@ -8,6 +8,7 @@ import ArticleWidget from "@/components/real/ArticleWidget";
 import ArticleWidgetRow from "@/components/real/ArticleWidgetRow";
 import MainContainer from "@/components/real/MainContainer";
 import CTA from "@/components/real/CTA";
+import Footer from "@/components/real/Footer";
 
 export async function getStaticProps() {
   const articles = [
@@ -187,9 +188,6 @@ export default ({ articles, read, shop, cta }) => (
         ))}
       </section>
     </MainContainer>
-    <footer>
-      {/* © 2020 ssense.com COUNTRY/REGION: ARGENTINA NEWSLETTER SIGNUP CUSTOMER
-      CARELOCATIONS EDITORIAL ARCHIVECAREERSAFFILIATESSITEMAP */}
-    </footer>
+    <Footer />
   </>
 );

@@ -1,0 +1,39 @@
+.root {
+  @apply px-10 mb-6;
+
+  .container {
+    @apply flex justify-between mx-auto;
+    max-width: 1680px;
+  }
+
+  > nav {
+    @apply items-center;
+  }
+
+  a,
+  span {
+    margin: 0 12px;
+    display: inline-block;
+    white-space: nowrap;
+    font-family: Favorit SSENSE Inter;
+    line-height: 15px;
+    font-size: 11px;
+  }
+
+  a:hover {
+    cursor: pointer;
+    background-image: linear-gradient(
+      180deg,
+      transparent 50%,
+      rgba(0, 0, 0, 0.75) 0
+    );
+    background-repeat: repeat-x;
+    background-size: 2px 2px;
+    background-position: 0 1.1em;
+  }
+}
+
+.sideNav {
+  @apply flex-grow-0 mb-0;
+  color: #888;
+}
