@@ -4,6 +4,7 @@
   border-bottom: 1px solid #979797;
   padding: 0.625rem 0;
   width: 100%;
+  width: calc((100vw - 20px) / 4);
 
   &:last-child {
     margin-right: 0;

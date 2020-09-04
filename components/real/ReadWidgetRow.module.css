@@ -5,6 +5,7 @@
   border-bottom: 1px solid #979797;
   padding: 0.625rem 0;
   margin: 0 0.625rem;
+
   width: calc((100vw - 20px) / 4);
   min-height: 106px;
 
