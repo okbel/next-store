@@ -71,7 +71,7 @@ export async function getStaticProps() {
     },
     {
       imgId: "iebe9upbow5cyjfq52bq_q4nauf",
-      title: "Getting Done Up When You’re Coming Undone",
+      title: "Getting Done Up",
       category: "Culture",
     },
     {

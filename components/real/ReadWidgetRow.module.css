@@ -1,9 +1,12 @@
 .root {
+  @apply mr-6 flex;
+  box-sizing: border-box;
   border-top: 1px solid #979797;
   border-bottom: 1px solid #979797;
   padding: 0.625rem 0;
-  @apply mr-6 flex;
-  width: 100%;
+  margin: 0 0.625rem;
+  width: calc((100vw - 20px) / 4);
+  min-height: 106px;
 
   &:last-child {
     margin-right: 0;
@@ -12,7 +15,8 @@
 
 .side {
   @apply mr-2;
-  min-width: 95px;
+  min-width: 63px;
+  max-width: 33.3333%;
 }
 
 .img {
@@ -22,7 +26,7 @@
 .title {
   @apply uppercase text-center;
   color: rgb(51, 51, 51);
-  font: lighter normal 0.89062rem/1.125rem Favorit SSENSE Inter1;
+  font: lighter normal 0.77187rem/1rem Favorit SSENSE Inter1;
   letter-spacing: -0.00313rem;
 }
 

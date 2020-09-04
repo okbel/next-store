@@ -1,6 +1,5 @@
 .root {
-  display: hidden;
-  @apply mr-6 flex flex-col justify-between;
+  display: none;
   border-top: 1px solid #979797;
   border-bottom: 1px solid #979797;
   padding: 0.625rem 0;
@@ -10,8 +9,8 @@
     margin-right: 0;
   }
 
-  @media (min-width: 768px) {
-    display: inline-block;
+  @media (min-width: 1024px) {
+    @apply flex mr-6 flex-col justify-between;
   }
 }
 

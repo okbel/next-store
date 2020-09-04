@@ -14,6 +14,7 @@ export default ({
   publicId,
   blur = 100,
   initialQuality = 10,
+  className,
   ...rest
 }) => {
   const [loading, setLoading] = useState(true);
@@ -58,7 +59,7 @@ export default ({
         width={width}
         height={height}
         loading="lazy"
-        className={s.img}
+        className={cn(s.img, className)}
       />
     </div>
   );
