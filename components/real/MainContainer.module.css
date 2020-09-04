@@ -1,5 +1,5 @@
 .root {
-  @apply mx-auto pt-12 p-2;
+  @apply mx-auto pt-12 p-2 px-0;
   max-width: 1680px;
 
   font-family: Favorit SSENSE Inter;
@@ -11,20 +11,45 @@
   text-rendering: optimizeLegibility;
 
   > section {
-    padding: 0 2.5rem;
-    @apply flex content-between justify-center my-16;
+    @apply flex content-between justify-center my-16 flex-col mx-auto;
+    padding: 0 0.625rem;
+
+    @media (min-width: 768px) {
+      @apply flex-row;
+      padding: 0 1.25rem;
+    }
+
+    @media (min-width: 1024px) {
+      padding: 0 1.875rem;
+    }
+
+    @media (min-width: 1440px) {
+      padding: 0 2.5rem;
+    }
   }
 
+  > section:nth-child(1),
   > section:nth-child(3),
   > section:nth-child(5),
   > section:nth-child(7),
   > section:nth-child(8) {
-    padding: 0 7.5rem;
+    padding: 0 0.625rem;
+
+    @media (min-width: 768px) {
+      padding: 0 3.125rem;
+    }
+
+    @media (min-width: 1024px) {
+      padding: 0 3.75rem;
+    }
+
+    @media (min-width: 1440px) {
+      padding: 0 7.5rem;
+    }
   }
 
   > section:nth-child(1) {
     @apply mt-16;
-    padding: 0 7.5rem;
   }
 
   > section:nth-child(6) {

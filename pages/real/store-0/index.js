@@ -129,7 +129,7 @@ export default ({ articles, read, shop, cta }) => (
         <ArticleWidget {...articles[6]} />
       </section>
       <section>
-        <MainReadWidget />
+        <MainReadWidget headline="A Good Read" />
         {read.map((data) => (
           <ReadWidgetRow {...data} />
         ))}
@@ -171,7 +171,7 @@ export default ({ articles, read, shop, cta }) => (
         <BlogWidget {...articles[4]} />
       </section>
       <section>
-        <MainReadWidget />
+        <MainReadWidget headline="Interviews" />
         {read.map((data) => (
           <ReadWidgetRow {...data} />
         ))}
@@ -180,12 +180,6 @@ export default ({ articles, read, shop, cta }) => (
         <BlogWidget {...articles[2]} />
         <BlogWidget {...articles[3]} />
         <BlogWidget {...articles[4]} />
-      </section>
-      <section>
-        <MainReadWidget />
-        {read.map((data) => (
-          <ReadWidgetRow {...data} />
-        ))}
       </section>
     </MainContainer>
     <Footer />

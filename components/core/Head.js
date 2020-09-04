@@ -7,7 +7,10 @@ const Head = () => (
       name="Description"
       content="A proof of concept using a NextJS seed ready to be deployed with Vercel."
     ></meta>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"
+    ></meta>
     <meta httpEquiv="Content-Language" content="en" />
     <meta name="msapplication-TileColor" content="#000000" />
     <meta name="robots" content="noindex" />
