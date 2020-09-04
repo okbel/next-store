@@ -9,13 +9,7 @@ const BlogWidget = ({
 }) => (
   <article className={s.root}>
     <figure>
-      <Image
-        publicId={imgId}
-        alt="image"
-        width="493"
-        height="657"
-        className={s.img}
-      />
+      <Image publicId={imgId} alt="image" width="493" height="657" />
     </figure>
     <div className={s.header}>
       <span className={s.category}>Recent</span>
