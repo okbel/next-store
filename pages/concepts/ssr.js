@@ -80,9 +80,11 @@ export default function Example({ data }) {
         </p>
         <br />
       </div>
-      <footer className="flex flex-row-reverse my-5 pt-4 min-w-full border-t-2">
+      <footer className="flex flex-row-reverse my-5 py-4 min-w-full border-t-2">
         <Link href="/concepts/isr" as="/concepts/isr">
-          Next up &rarr; Incremental Static Regeneration
+          <a className="inline-block">
+            Next up &rarr; Incremental Static Regeneration
+          </a>
         </Link>
       </footer>
     </Layout>

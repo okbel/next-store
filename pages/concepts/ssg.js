@@ -73,9 +73,9 @@ export default function Example({ data }) {
         </p>
         <br />
       </div>
-      <footer className="flex flex-row-reverse my-5 pt-4 min-w-full border-t-2">
+      <footer className="flex flex-row-reverse my-5 py-4 min-w-full border-t-2">
         <Link href="/concepts/ssr" as="/concepts/ssr">
-          Next up &rarr; Server-side Rendering
+          <a className="inline-block">Next up &rarr; Server-side Rendering</a>
         </Link>
       </footer>
     </Layout>
