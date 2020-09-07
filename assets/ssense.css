@@ -116,20 +116,6 @@
   font-style: normal;
 }
 
-.icon {
-  color: black;
-  font-family: ssense-fonts;
-  font-style: normal;
-  font-weight: 400;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  display: inline-block;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: auto !important;
-}
-
 .fa,
 .heart-icon .button-label:before {
   font-family: ssense-fonts;

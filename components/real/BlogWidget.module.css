@@ -1,6 +1,8 @@
 .root {
+  @apply mb-6;
+
   @media (min-width: 768px) {
-    @apply flex-1 mr-6;
+    @apply flex-1 mr-6 mb-2;
     max-width: 33.33%;
 
     &:last-child {
