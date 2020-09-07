@@ -1,16 +1,44 @@
 .root {
-  font-family: Favorit SSENSE Inter;
-  @apply flex justify-between items-center relative;
-  position: fixed;
-  background-color: white;
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 55px;
-  line-height: 55px;
-  padding-left: 55px;
-  padding-right: 55px;
-  z-index: 10;
+  .menu,
+  .mobileMenu {
+    font-family: Favorit SSENSE Inter;
+    @apply flex justify-between items-center relative;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 55px;
+    line-height: 55px;
+    padding: 0 16px;
+    z-index: 10;
+
+    nav > * {
+      padding: 8px;
+      box-sizing: border-box;
+      background-image: none;
+      background-repeat: none;
+      background-size: 0;
+      background-position: 0;
+      text-decoration: none;
+    }
+  }
+
+  .menu {
+    display: none;
+    padding-left: 55px;
+    padding-right: 55px;
+  }
+
+  @media (min-width: 768px) {
+    .mobileMenu {
+      display: none;
+    }
+
+    .menu {
+      display: flex;
+    }
+  }
 }
 
 .logo {
