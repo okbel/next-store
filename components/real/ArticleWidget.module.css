@@ -1,8 +1,7 @@
 .root {
-  @apply my-5;
-
-  @media (min-width: 1040px) {
+  @media (min-width: 768px) {
     @apply mr-6 flex-1;
+    max-width: 50%;
 
     &:last-child {
       @apply mr-0;

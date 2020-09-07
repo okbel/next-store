@@ -7,8 +7,8 @@ const BlogWidget = ({ title = "", category = "", imgId = "" }) => (
       <Image
         publicId={imgId}
         alt="image"
-        width="109"
-        height="144"
+        width="96"
+        height="127"
         className={s.img}
       />
     </figure>

@@ -16,6 +16,8 @@
   @media (min-width: 1040px) {
     @apply mr-6;
     width: calc((100vw - 20px) / 4);
+    max-width: calc((100vw - 20px) / 4);
+    min-height: 149px;
 
     &:nth-child(3),
     &:nth-child(4) {
@@ -30,8 +32,7 @@
 
 .side {
   @apply mr-2;
-  min-width: 63px;
-  max-width: 33.3333%;
+  min-width: 33.3333%;
 }
 
 .img {
@@ -39,10 +40,12 @@
 }
 
 .title {
-  @apply uppercase text-center;
   color: rgb(51, 51, 51);
-  font: lighter normal 0.77187rem/1rem Favorit SSENSE Inter1;
+  font: lighter normal 0.89062rem/1.125rem Favorit SSENSE Inter1;
   letter-spacing: -0.00313rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-left: 0.625rem;
 }
 
 .header {

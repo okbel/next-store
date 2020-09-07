@@ -49,7 +49,7 @@
   }
 
   > section:nth-child(1) {
-    @apply mt-6;
+    @apply mt-16;
   }
 
   > section:nth-child(6) {

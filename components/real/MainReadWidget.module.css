@@ -3,8 +3,8 @@
   border-top: 1px solid #979797;
   border-bottom: 1px solid #979797;
   padding: 0.625rem 0;
-  width: 100%;
-  width: calc((100vw - 20px) / 4);
+  max-width: calc((100vw - 20px) / 4);
+  min-height: 149px;
 
   &:last-child {
     margin-right: 0;
@@ -16,10 +16,9 @@
 }
 
 .title {
-  @apply uppercase;
   font: lighter normal 2.375rem/2.75rem Favorit SSENSE Inter1;
+  text-transform: uppercase;
   letter-spacing: -0.07812rem;
-  letter-spacing: 1px;
   color: rgb(51, 51, 51);
 }
 
