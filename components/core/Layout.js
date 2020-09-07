@@ -11,7 +11,7 @@ export default function Layout({ children, showGoBack, styled }) {
           href="https://fonts.xz.style/serve/inter.css"
         ></link>
       </Head>
-      <div className={`container mx-auto p-12  max-w-5xl`}>
+      <div className={`container mx-auto px-12 pb-12 max-w-5xl`}>
         <header className={s.header}>
           <h1 className="text-2xl font-semibold">next-store</h1>
           <p className="py-4">
