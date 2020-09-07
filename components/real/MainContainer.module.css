@@ -1,5 +1,5 @@
 .root {
-  @apply mx-auto pt-12 p-2 px-0;
+  @apply mx-auto pt-1 p-2 px-0;
   max-width: 1680px;
 
   font-family: Favorit SSENSE Inter;
@@ -49,7 +49,7 @@
   }
 
   > section:nth-child(1) {
-    @apply mt-16;
+    @apply mt-6;
   }
 
   > section:nth-child(6) {

@@ -12,16 +12,17 @@
     line-height: 55px;
     padding: 0 16px;
     z-index: 10;
+  }
 
-    nav > * {
-      padding: 8px;
-      box-sizing: border-box;
-      background-image: none;
-      background-repeat: none;
-      background-size: 0;
-      background-position: 0;
-      text-decoration: none;
-    }
+  .mobileMenu nav > * {
+    padding: 8px;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    background-image: none;
+    background-repeat: none;
+    background-size: 0;
+    background-position: 0;
+    text-decoration: none;
   }
 
   .menu {
@@ -30,7 +31,7 @@
     padding-right: 55px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1040px) {
     .mobileMenu {
       display: none;
     }

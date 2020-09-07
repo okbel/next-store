@@ -1,8 +1,12 @@
 .root {
-  @apply flex-1 mr-6;
+  @apply my-5;
 
-  &:last-child {
-    @apply mr-0;
+  @media (min-width: 1040px) {
+    @apply flex-1 mr-6;
+
+    &:last-child {
+      @apply mr-0;
+    }
   }
 }
 
