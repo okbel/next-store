@@ -8,7 +8,7 @@
     "cloudinary-react": "^1.6.6",
     "contentful": "^7.14.6",
     "intersection-observer": "^0.10.0",
-    "next": "^9.4.4",
+    "next": "^13.0.3",
     "postcss-exclude-files": "^1.0.15",
     "postcss-nested": "^4.2.1",
     "prismic-javascript": "^3.0.0",
